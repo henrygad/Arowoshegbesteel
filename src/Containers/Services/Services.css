@@ -1,0 +1,11 @@
+.services_container{
+    background-color: var(--third-color);
+    
+    flex-direction: column;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .services_container{
+       height: 1600px;
+    }
+    
+}

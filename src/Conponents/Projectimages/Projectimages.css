@@ -1,0 +1,38 @@
+.project_images .title{
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project_images .title h2{
+    color: var(--fourth-color);
+}
+.project_images .sliders_div{
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2%;
+}
+.project_images .sliders_div > div{
+    height: 45%;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .project_images .title{
+        height: 50px;
+        width: 90%;
+        margin: 0 auto;
+        align-items: flex-end;
+
+    }
+    .project_images .sliders_div{
+        height: 80%;
+        grid-row-gap: 1%;
+
+        justify-content: center;
+    }
+
+}

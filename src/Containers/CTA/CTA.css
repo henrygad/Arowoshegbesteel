@@ -1,0 +1,14 @@
+.cta_container{
+    background-color: rgb(243, 239, 239);
+    
+    align-items: center;
+}
+.cta_container > div{
+    flex: 1;
+    height: 60%;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .cta_container > div{
+        height: 49%;
+    }
+}

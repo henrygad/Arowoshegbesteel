@@ -1,0 +1,15 @@
+.header_social_icons{
+    height: 100%;
+    width: 100%;
+    padding-right: 100px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column-gap: 10px;
+}
+.header_social_icons .img{
+    height: 70%;
+    color: darkblue;
+    object-fit: cover;
+}

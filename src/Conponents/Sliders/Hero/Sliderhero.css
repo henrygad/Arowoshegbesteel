@@ -1,0 +1,28 @@
+.hero_slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 0;
+}
+.hero_slides{
+    position: relative;
+    width: 300%;
+    height: 100%;
+    background-color: gray;
+    left: -200%;
+
+    display: flex;
+}
+.hero_slides .slide{
+    position: relative;
+    width: 100%;
+    height: inherit;
+}
+.hero_slides .slide::before{
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0 , .25);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}

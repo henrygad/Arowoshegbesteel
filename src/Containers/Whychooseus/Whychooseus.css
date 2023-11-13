@@ -1,0 +1,9 @@
+.choose_us{
+    flex-direction: column;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .choose_us{
+       
+    }
+
+}

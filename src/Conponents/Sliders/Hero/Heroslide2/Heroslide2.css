@@ -1,0 +1,108 @@
+.hero_slides .slide.two {
+    background-image: url('./heroslide2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero_slides  .slide.two .slide_title{
+   width: 90%;
+   position: absolute;
+   top: 20%;
+   left: 16%;
+   transform: translateY(-50%);
+   z-index: 4;
+ }
+ .hero_slides  .slide.two .slide_title h2{
+   width: 70%;
+   font-size: 4rem;
+   color: var(--fourth-color);
+ }
+.hero_slides .slide_text.two{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 380px;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+}
+.hero_slides .slide_text.two .years_experience{
+    width: 140px;
+    height: 140px;
+    background-color: var(--primary-color);
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+.hero_slides .slide_text.two .years_experience h3{
+    width: 100%;
+    margin-left: 5px;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: start;
+    color: var(  --fourth-color);
+}
+.hero_slides .slide_text.two .years_experience p,
+.hero_slides .slide_text.two .completed_projects p{
+    color: var(  --fourth-color);
+}
+.hero_slides .slide_text.two .completed_projects{
+    width: 140px;
+    height: 140px;
+    padding-top: 20px;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+.hero_slides .slide_text.two .completed_projects h3{
+    width: 100%;
+    font-size: 2rem;
+    margin-left: 5px;
+    font-weight: 900;
+    text-align: start;
+    color:  var(  --fourth-color);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .hero_slides  .slide.two .slide_title{
+        width: 100%;
+        left: 5%;
+        top: 10%;
+      }
+    .hero_slides  .slide.two .slide_title h2{
+        width: 90%;
+        font-size: 1.8rem;
+      }
+
+      .hero_slides .slide_text.two{
+        right: 10%;
+        bottom: 65%;
+        width: 250px;
+
+        justify-content: space-evenly;
+    }
+    .hero_slides .slide_text.two .completed_projects,
+    .hero_slides .slide_text.two .years_experience{
+        width: 100px;
+        height: 100px;
+    }
+    .hero_slides .slide_text.two .completed_projects h3,
+    .hero_slides .slide_text.two .years_experience h3{
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+    .hero_slides .slide_text.two .years_experience p,
+    .hero_slides .slide_text.two .completed_projects p{
+        font-size: .7rem;
+        margin-left: 5px;
+    }
+
+}

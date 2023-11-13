@@ -1,0 +1,45 @@
+.services_container .grid_container .box  .slider{
+    background-color: white;
+    height: 70%;
+    filter: drop-shadow(0px 5px 1px rgba(0,0 , 0, .25) );
+    overflow: hidden;
+}
+.services_container .grid_container .box  .slider,
+.services_container .grid_container .box  .second_div{
+   position: relative;
+   overflow: hidden;
+}
+.services_container .grid_container .box  .slider .slides{
+    width: 100%;
+    height: 100%;  
+}
+.services_container .grid_container .box  .slider .slides img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;   
+}
+.services_container .grid_container .box  .slider .slider_nav{
+   background-color: black; 
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   height: 30px;
+   width: 30px;
+   margin: 0 5px;
+   border: 0;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.services_container .grid_container .box  .slider .slider_nav img{
+    height: 60%;
+    object-fit: cover;
+ }
+.services_container .grid_container .box  .slider .slider_nav.left{
+    left: 0;
+ }
+ .services_container .grid_container .box  .slider .slider_nav.right{
+    right: 0;
+ }

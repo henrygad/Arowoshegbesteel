@@ -1,0 +1,33 @@
+.title_stroke{
+    width: 90%;
+    height: 60%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_stroke .stroke{
+    display: block;
+    width: 25%;
+    height: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color:  var(--primary-color);
+}
+.title_stroke .stroke.left{
+  margin-right: 1%;
+}
+.title_stroke .stroke.right{
+    margin-left: 1%;
+}
+.title_stroke .stroke h2{
+    width: 50%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .title_stroke .stroke{
+        height: 3px;
+    }
+
+}

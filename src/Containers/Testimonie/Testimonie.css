@@ -1,0 +1,10 @@
+.testimonie_container{
+    flex-direction: column;
+    background-color: var(--fourth-color);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .testimonie_container{
+       height: 500px;
+    }
+}

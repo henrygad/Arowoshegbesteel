@@ -1,0 +1,23 @@
+.testimonie_container .title{
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonie_container .content{
+    height: 60%;
+    width: 100%;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .testimonie_container .title{
+        height: 50px;
+    
+        align-items: flex-end;
+    }
+    .testimonie_container .content{
+        height: 80%;   
+
+    }
+}

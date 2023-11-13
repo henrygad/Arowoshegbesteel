@@ -1,0 +1,40 @@
+.hero_slides .slide.three {
+    background-image: url('./heroslider3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero_slides .slide_text.three {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 650px;
+    height: 400px;
+    padding: 2.5%;
+    background-color: var(--fourth-color);
+    z-index: 3;
+}
+.hero_slides .slide_text.three h3{
+    color: blue;
+}
+.hero_slides .slide_text.three p{
+    line-height: 35px;
+    margin-top: 20px;
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .hero_slides .slide_text.three {
+        width: 65%;
+        height: 250px;
+    }
+    .hero_slides .slide_text.three h3{
+        font-size: .8rem;
+    }
+    .hero_slides .slide_text.three p{
+        line-height: 20px;
+        margin-top: 10px;
+        color: black;
+    }
+
+}
