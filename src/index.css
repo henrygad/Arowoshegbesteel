@@ -125,6 +125,9 @@ footer section{
     a{
         font-size: .6rem;
     }
+    .header_wrap{
+        margin-top: 5px;
+    }
     main{
         padding-top: 500px;
         bottom: 500px;

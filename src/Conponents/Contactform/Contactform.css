@@ -73,7 +73,7 @@ input[type="text" i] {
      outline-color: var(--primary-color);
    }
   .contact_us form .grid_wrap > div textarea{
-    flex: 1;
+    flex: 1 0 ;
     padding: 4px;
     border: 0;
   }
@@ -113,9 +113,16 @@ input[type="text" i] {
     height: 70%;
   }
   .contact_us form .grid_wrap{
+    grid-template-columns: 1fr;
  
    grid-column-gap: 2%;
    grid-row-gap: 2%;
+}
+.contact_us form .grid_wrap > div textarea{
+  flex: 1 0 100px;
+}
+.contact_us form .message{
+  grid-area: 5/ 1/ span 1 /span 1;
 }
 .contact_us form .grid_wrap > div label{
   font-size: .8rem;

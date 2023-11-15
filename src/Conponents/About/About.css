@@ -113,7 +113,7 @@
     }
 
     .about_container .number > img {
-      height: 25%;
+      height: 50%;
       object-fit: cover;
     }
     .about_container .second_div{
