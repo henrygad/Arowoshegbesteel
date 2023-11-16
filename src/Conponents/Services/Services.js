@@ -23,42 +23,42 @@ const Services = () => {
           <div className='box one'>
             <Sliderservices img1={kitchenextractor} navright={slidernavright} navleft={slidernavrleft} />
             <div className='second_div'>
-              <h3>domestic ventilation installation</h3>
+              <p>domestic ventilation installation</p>
               <a href='#contact' >Appiontment<img src={buttonarrow} alt='' /></a>
             </div>
           </div>
           <div className='box two'>
             <Sliderservices img1={factoryextractor} navright={slidernavright} navleft={slidernavrleft} />
             <div className='second_div'>
-              <h3>industrial ventilation installation</h3>
+              <p>industrial ventilation installation</p>
               <a href='#contact' >Appiontment<img src={buttonarrow} alt='' /></a>
             </div>
           </div>
           <div className='box three'>
             <Sliderservices img1={Industrialequipment} navright={slidernavright} navleft={slidernavrleft} />
             <div className='second_div'>
-              <h3>Industrial equipment installation</h3>
+              <p>Industrial equipment installation</p>
               <a href='#contact' >Appiontment<img src={buttonarrow} alt='' /></a>
             </div>
           </div>
           <div className='box four'>
             <Sliderservices img1={metalfracbic} navright={slidernavright} navleft={slidernavrleft} />
             <div className='second_div'>
-              <h3>metal fabrications</h3>
+              <p>metal fabrications</p>
               <a href='#contact' >Appiontment<img src={buttonarrow} alt='' /></a>
             </div>
           </div>
           <div className='box five'>
             <Sliderservices img1={coldroom} navright={slidernavright} navleft={slidernavrleft} />
             <div className='second_div'>
-              <h3>cold room</h3>
+              <p>cold room</p>
               <a href='#contact' >Appiontment<img src={buttonarrow} alt='' /></a>
             </div>
           </div>
           <div className='box six'>
             <Sliderservices img1={aluminumroofin} navright={slidernavright} navleft={slidernavrleft} />
             <div className='second_div'>
-              <h3>aluminum roofing & trussses</h3>
+              <p>aluminum roofing & trussses</p>
               <a href='#contact' >Appiontment<img src={buttonarrow} alt='' /></a>
             </div>
           </div>

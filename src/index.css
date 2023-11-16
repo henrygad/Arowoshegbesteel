@@ -65,8 +65,8 @@ button{
     cursor: pointer;
 }
 .header_wrap{
-    margin-top: 5px;
-    height: 110px;
+    padding-top: 5px;
+    height: 105px;
     width: 100%;
     background-color: var(--fourth-color);
     z-index: 10;
@@ -76,9 +76,7 @@ main, footer{
     overflow: hidden;
 }
 main{
-    padding-top: 600px;
-    position: relative;
-    bottom: 600px;
+    margin-bottom: 600px;
 }
 main section {
     position: relative;
@@ -129,8 +127,7 @@ footer section{
         margin-top: 5px;
     }
     main{
-        padding-top: 500px;
-        bottom: 500px;
+        margin-bottom: 500px;
     }
     .header_wrap{
         padding-top: 0px;

@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2%;
-    grid-row-gap: 4%;
+    grid-row-gap: 8%;
 }
 .services_container .grid_container .box{
     max-height: 300px;
@@ -31,8 +31,8 @@
     display: flex;
     justify-content: space-between;
 }
-.services_container .grid_container .box .second_div h3{
-   font-weight: bold;
+.services_container .grid_container .box .second_div p{
+font-weight: 600;
    text-transform: capitalize;
 }
 .services_container .grid_container .box .second_div a{

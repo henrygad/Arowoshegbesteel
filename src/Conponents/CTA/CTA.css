@@ -1,92 +1,78 @@
 .cta_div{
+    width: 100%;
     height: 100%;
 }
 .cta_div .contents_wrap{
     position: relative;
-    width: 100%;
-    min-width: 240px;
+    width: inherit;
     height: inherit;
 }
 .cta_div .contents_wrap .box{
     position: absolute;
     width: 30%;
-    height: 100px;
+    min-height: 100px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.cta_div .contents_wrap .box .img_div{
+
+.cta_div .contents_wrap .box  .img_div{
     width: 30%;
-    height: inherit;
 }
-.cta_div .contents_wrap .box .img_div .img{
-    color: var(--primary-color);
+.cta_div .contents_wrap .box  .img_div .img{
     width: 100%;
-    height: 60%;
-    object-fit: contain;
+    height: 40%;
+   color: var(--primary-color);
 }
-.cta_div .contents_wrap .box .content{
+.cta_div .contents_wrap .box  .content{
     flex: 1;
-    height: inherit;
+}
+.cta_div .contents_wrap .box  .content h3,
+.cta_div .contents_wrap .box  .content p{
+    width: 100%;
     text-align: center;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
-.cta_div .contents_wrap .box h3{
+.cta_div .contents_wrap .box  .content h3{
+    margin-bottom: 8px;
     text-transform: capitalize;
-    font-weight: bold;
-}
-.cta_div .contents_wrap .box p{
-
 }
 .cta_div .contents_wrap .box.up{
-    top: 0;
-    left: 50%;
-    transform: translatex(-50%);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .cta_div .contents_wrap .box.down{
     bottom: 0;
     left: 50%;
-    transform: translatex(-50%);
-}
-.cta_div .contents_wrap .box.right{
-    top: 50%;
-    right: 0;
-    transform: translatey(-50%);
+    transform: translateX(-50%);
 }
 .cta_div .contents_wrap .box.left{
     top: 50%;
     left: 0;
-    transform: translatey(-50%);
+    transform: translateY(-50%);
 }
-.cta_div .contents_wrap .cta_button{
-    position: absolute;
+.cta_div .contents_wrap .box.right{
     top: 50%;
-    left: 50%;
-    transform: translatex(-50%) translatey(-50%);
-    width: 100%;
-    min-height: 100px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    right: 0; 
+    transform: translateY(-50%);
+}
+.cta_div .contents_wrap .box.center{
+    display: block;
     text-align: center;
+    top: 48%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
-.cta_div .contents_wrap .cta_button h3{
-    font-weight: bold;
-    text-transform: capitalize;
-    width: 20%;
+.cta_div .contents_wrap .box.center h3{
+    text-transform: uppercase;
+    padding: 0 5px;
+    font-size: 1.4rem;
     color: var(--primary-color);
-
 }
-.cta_div .contents_wrap .cta_button a{
-    margin-top: 20px;
+.cta_div .contents_wrap .box.center a{
+    margin-top: 15px;
     text-transform: capitalize;
     color: var(--fourth-color);
-    padding: 5px 10px;
+    padding: 15px 20px;
     background-color: var(--secondary-color);
     border: 0;
     filter: drop-shadow(0px 5px 1px rgba(0,0 , 0, .25) );
@@ -94,41 +80,20 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.cta_div .contents_wrap .cta_button a img{
+.cta_div .contents_wrap .box.center a img{
     width: 10%;
     object-fit: cover;
 }
 @media (min-width: 320px) and (max-width: 480px){
-    .cta_div .contents_wrap .box.up{
-        top: 20%;
-        transform: translatex(-50%) translatey(-50%);
+    .cta_div .contents_wrap .box.center h3{
+        padding: 0 0;
+        font-size: .9rem;
     }
-    .cta_div .contents_wrap .box.down{
-        bottom: 5%;
-        transform: translatex(-50%) translatey(-50%);
-    }
-    .cta_div .contents_wrap .box .img_div{
-        width: 25%;
-
-        align-items: flex-start;
-     
-    }
-    .cta_div .contents_wrap .box .img_div .img{
-        width: 100%;
-        height: 50%;
-    }
-    .cta_div .contents_wrap .cta_button{
-        width: 30%;
-        min-height: 100px;
-    }
-    .cta_div .contents_wrap .cta_button h3{
-        width: 100%;
-    }
-    .cta_div .contents_wrap .cta_button a{
+    .cta_div .contents_wrap .box.center a{
         margin-top: 10px;
-        padding: 10px 5px;
-        grid-gap: 3px;
+        padding: 10px 10px;
     }
 
 }

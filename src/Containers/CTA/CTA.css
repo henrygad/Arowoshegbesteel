@@ -1,14 +1,43 @@
 .cta_container{
     background-color: rgb(243, 239, 239);
-    
+
+    flex-direction: column;
     align-items: center;
 }
-.cta_container > div{
-    flex: 1;
+.cta_container .title{
+    width: 80%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_container .content{
+    width: 100%;
     height: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.cta_container .content > div{
+    flex: 1 0  240px;
+
 }
 @media (min-width: 320px) and (max-width: 480px){
-    .cta_container > div{
-        height: 49%;
+    .cta_container .title{
+        height: 50px;
     }
+    
+    .cta_container .content{
+        height: 90%;
+    } 
+    .cta_container .content > div:nth-child(1){
+        height: 55%;
+    }
+    .cta_container .content > div:nth-child(2){
+        height: 45%;
+    }
+ 
 }

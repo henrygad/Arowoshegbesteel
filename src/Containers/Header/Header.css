@@ -1,12 +1,12 @@
 .header_grid{
     height: 100px;
-    min-height: 10vh;
+    max-height: 10vh;
 
     padding-right: 3%;
     padding-left: 5%;
 
     display: grid;
-    grid-template-columns: repeat(2, 1f);
+    grid-template-columns: repeat(2, 1fr);
    
 }
 
@@ -32,14 +32,13 @@ nav{
     .header_grid{
         height: 60px;
         min-height: 6vh;
-    }
-    .header_grid{
-        padding-right: 1%;
-        padding-left: 3%; 
-    }
-    .header_social_media{
-        display: none;
+        padding-right: 2%;
+        padding-left: 2%; 
     }
   
+    .header_social_media{
+       display: none;
+    }
+   
 
 }

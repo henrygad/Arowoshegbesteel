@@ -29,7 +29,7 @@ const CTA = () => {
             </p>
         </div>
       </div>
-      <div className='cta_button' >
+      <div className=' box center' >
         <h3>Make an appiontment today!</h3>
         <a href='#contact'>get free consultation <img src={buttonarrow} alt='' /> </a>
       </div>
