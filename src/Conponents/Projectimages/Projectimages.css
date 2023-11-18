@@ -18,7 +18,7 @@
     grid-row-gap: 2%;
 }
 .project_images .sliders_div > div{
-    height: 45%;
+    height: 50%;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .project_images .title{
