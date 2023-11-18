@@ -1,7 +1,7 @@
 .hero_slides .slide.one {
     background-image: url('./heroslide1.jpg');
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
 .hero_slides .slide.one .content_wrap{
@@ -78,6 +78,14 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+    .hero_slides .slide.one {
+        background-image: url('./heroslide1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
     .hero_slides .slide.one .slide_title{
         align-items: center;
      }
