@@ -1,7 +1,7 @@
 .hero_slides .slide.two {
     background-image: url('./heroslide2.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 .hero_slides  .slide.two .slide_title{

@@ -15,8 +15,8 @@
 }
 .services_container .grid_container .box  .slider .slides img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;   
+    height: 100%; 
+    width: 100%;  
 }
 .services_container .grid_container .box  .slider .slider_nav{
    background-color: black; 

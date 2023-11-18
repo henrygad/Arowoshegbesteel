@@ -1,7 +1,7 @@
 .hero_slides .slide.one {
-    background-image: url('./heroslide1.svg');
+    background-image: url('./heroslide1.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
 }
 .hero_slides .slide.one .content_wrap{

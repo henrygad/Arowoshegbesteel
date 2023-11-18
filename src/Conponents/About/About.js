@@ -9,7 +9,7 @@ const About = () => {
     <>
       <div className='first_div'>
         <div className='title'>
-          <Titlestroke text={"About  us"} />
+          <Titlestroke text={"About us"} />
         </div>
         <div className='texts'>
           <p>

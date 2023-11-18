@@ -1,6 +1,7 @@
 .about_container .first_div{
-    flex: 1;
+    flex: 1 0 55%;
     height: 60%;
+    min-width: 240px;
 
     display: flex;
     flex-direction: column;
@@ -15,12 +16,11 @@
 
    
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
   .about_container .texts{
-      flex: 1;
-      min-width: 240px;
+      flex: 1 0 240px;
 
       display: flex;
       flex-direction: column;
@@ -39,7 +39,6 @@
   .about_container .number{
      height: 50px;
      width: 80%;
-     min-width: 480px;
     
     display: flex;
     align-items: flex-end;
@@ -53,18 +52,16 @@
     font-weight: 900;
   }
   .about_container .second_div{
-      flex: 1;
+      flex: 1 0 45%;
       height: 60%;
-      width: 100%;
       min-width: 240px;
-      padding-left: 50px;
-
 
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
   }
   .about_container .second_div img{
-     height: 80%;
+     height: 95%;
      object-fit: cover;
      border: 0;
      border-radius: 20px;
