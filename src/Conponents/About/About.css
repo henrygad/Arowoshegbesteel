@@ -70,7 +70,7 @@
 
    @media (min-width: 320px) and (max-width: 480px){
     .about_container .first_div{
-       height: 60%;  
+       height: 55%;  
 
        align-items: center;
        justify-content: center;
@@ -100,30 +100,91 @@
       margin-top: 20px;
     }
     .about_container .number{
-
+      margin-top: 10px;
       min-width: 320px;
       height: 25px;
 
       align-items: flex-start;
       justify-content: center;
-      grid-gap: 1%;
+      grid-gap: 2%;
+    }
+    .about_container .number p{
+      font-size: .7rem;
     }
 
     .about_container .number > img {
-      height: 50%;
+      height: 60%;
       object-fit: cover;
     }
     .about_container .second_div{
-      height: 40%;
+      height: 45%;
       padding-left: 0;
 
       justify-content: center;
-      align-items: flex-start;
-      filter: drop-shadow(5px 5px  rgba(0, 0 , 0, .25));
+      align-items: center;
+      filter: drop-shadow(1px 0px  rgba(0, 0 , 0, .25));
   }
     .about_container .second_div img{
       height: 50%;
     }
  
-
    }
+   /*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+  .about_container .first_div{
+    height: 55%;  
+    min-width: 483px;
+
+    align-items: center;
+    justify-content: center;
+    grid-gap: 0;
+}
+ .about_container .first_div .title{
+
+   min-width:  320px;
+   justify-content: center;
+   align-items: center;
+}
+   .about_container .texts{
+     min-width:  320px;
+     
+     text-align: center;
+
+     justify-content: flex-start;
+     align-items: center;
+  }
+  .about_container .texts > p{
+    width: 80%;
+    line-height: 21px;
+ }
+ .about_container .texts > p span{
+   margin-top: 30px;
+ }
+ .about_container .number{
+   min-width: 320px;
+   height: 25px;
+   margin-top: 10px;
+
+   align-items: flex-start;
+   justify-content: center;
+   grid-gap: 2%;
+ }
+
+ .about_container .number > img {
+   height: 80%;
+   object-fit: cover;
+ }
+ .about_container .second_div{
+   height: 45%;
+   min-width: 383px;
+   padding-left: 0;
+
+   justify-content: center;
+   align-items: flex-start;
+   filter: drop-shadow(1px 0px  rgba(0, 0 , 0, .25));
+}
+ .about_container .second_div img{
+   height: 70%;
+ }
+
+}

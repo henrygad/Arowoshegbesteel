@@ -84,24 +84,61 @@
 
       .hero_slides .slide_text.two{
         right: 10%;
-        bottom: 65%;
-        width: 250px;
+        bottom: 0%;
+        width: 60%;
 
         justify-content: space-evenly;
     }
     .hero_slides .slide_text.two .completed_projects,
     .hero_slides .slide_text.two .years_experience{
-        width: 100px;
-        height: 100px;
+        width: 40%;
+        height: 30%;
     }
     .hero_slides .slide_text.two .completed_projects h3,
     .hero_slides .slide_text.two .years_experience h3{
-        font-size: 1rem;
+        font-size: 1.4rem;
         margin-left: 8px;
     }
     .hero_slides .slide_text.two .years_experience p,
     .hero_slides .slide_text.two .completed_projects p{
-        font-size: .7rem;
+        font-size: .8rem;
+        margin-left: 5px;
+        padding-right: 2px;
+    }
+
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px){
+    .hero_slides  .slide.two .slide_title{
+        width: 100%;
+        left: 5%;
+        top: 10%;
+      }
+    .hero_slides  .slide.two .slide_title h2{
+        width: 90%;
+        font-size: 2rem;
+      }
+
+      .hero_slides .slide_text.two{
+        right: 10%;
+        bottom: 0%;
+        width: 60%;
+
+        justify-content: space-evenly;
+    }
+    .hero_slides .slide_text.two .completed_projects,
+    .hero_slides .slide_text.two .years_experience{
+        width: 30%;
+        height: 30%;
+    }
+    .hero_slides .slide_text.two .completed_projects h3,
+    .hero_slides .slide_text.two .years_experience h3{
+        font-size: 3rem;
+        margin-left: 8px;
+    }
+    .hero_slides .slide_text.two .years_experience p,
+    .hero_slides .slide_text.two .completed_projects p{
+        font-size: 1rem;
         margin-left: 5px;
     }
 

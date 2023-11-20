@@ -112,3 +112,11 @@
     
        } */
 }
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+    .header_nav{
+        width: 100%;
+        padding-right: 4px;
+    }
+
+}

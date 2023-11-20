@@ -26,7 +26,7 @@
 @media (min-width: 320px) and (max-width: 480px){
     .hero_slides .slide_text.three {
         width: 65%;
-        height: 250px;
+        height: 25%;
     }
     .hero_slides .slide_text.three h3{
         font-size: .8rem;
@@ -34,7 +34,21 @@
     .hero_slides .slide_text.three p{
         line-height: 20px;
         margin-top: 10px;
-        color: black;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767.99px){
+    .hero_slides .slide_text.three {
+        width: 65%;
+        height: 30%;
+    }
+    .hero_slides .slide_text.three h3{
+        font-size: 1.2rem;
+    }
+    .hero_slides .slide_text.three p{
+        font-size: 1rem;
+        line-height: 25px;
+        margin-top: 10px;
     }
 
 }
