@@ -91,50 +91,104 @@ input[type="text" i] {
     background-color: var(--secondary-color);
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480.99px){
   .contact_us{
     align-items: center;
+}
+.contact_us form{
+  height: 92%;
 }
 .contact_us form .grid_wrap{
   height: 100%;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 50px 50px 50px 50px 100px;
-  grid-gap: 0;
+  grid-template-rows: 45px 45px 45px 45px 120px;
+  grid-gap: 10px;
 }
 .contact_us form .message{
   grid-area: 5/ 1/ span 1 /span 1;
 }
+.contact_us form .grid_wrap > div{
+  /* background-color: red; */
+}
 .contact_us form .grid_wrap > div label,
 .contact_us form .grid_wrap > div input,
 .contact_us form .grid_wrap > div textarea{
-  font-size: .8rem;
+  font-size: .6rem;
  }
 .contact_us form .grid_wrap > div label{
-  font-size: .7rem;
-   height: 15px;
+   height: 18px;
    padding-left: 1px;
 }
 .contact_us form .grid_wrap > div input{
-   height: 25px;
+   flex: 1;
    padding: 2px;
   }
   .contact_us form .grid_wrap > div input::placeholder,
   .contact_us form .grid_wrap > div textarea::placeholder{
     padding-left: 2px;
-    font-size: .5rem;
+    font-size: .6rem;
    }
    .contact_us form .grid_wrap > div textarea::placeholder{
     padding-top: 2px;
    }
    .contact_us form .grid_wrap > div textarea{
-    height: 85px;
+    
   }
   .contact_us form .form_btn{
-    margin-top: 5px;
-    height: 35px;
+    margin-top: 8px;
+    height: 30px;
   }
   .contact_us form button{
     font-size: .8rem;
 }
+
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+  .contact_us{
+      align-items: center;
+  }
+  .contact_us form{
+    width: 90%;
+    height: 90%;
+  }
+  .contact_us form .grid_wrap{
+    height: 100%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 45px);
+    grid-gap: 10px;
+  }
+  .contact_us form .message{
+    grid-area: 3/ 1/ span 3 /span 2;
+  }
+  .contact_us form .grid_wrap > div label,
+  .contact_us form .grid_wrap > div input,
+  .contact_us form .grid_wrap > div textarea{
+    font-size: .7rem;
+  }
+  .contact_us form .grid_wrap > div label{
+    height: 18px;
+    padding-left: 1px;
+  }
+  .contact_us form .grid_wrap > div input,
+  .contact_us form .grid_wrap > div textarea{
+    flex: 1;
+    padding: 2px;
+    }
+    .contact_us form .grid_wrap > div input::placeholder,
+    .contact_us form .grid_wrap > div textarea::placeholder{
+      padding-left: 2px;
+      font-size: .7rem;
+     }
+     .contact_us form .grid_wrap > div textarea::placeholder{
+      padding-top: 2px;
+     }
+     .contact_us form .form_btn{
+      margin-top: 10px;
+      height: 40px;
+    }
+    .contact_us form button{
+      font-size: .9rem;
+  }
 
 }

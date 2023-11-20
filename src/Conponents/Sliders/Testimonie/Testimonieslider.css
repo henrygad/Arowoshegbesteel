@@ -90,15 +90,16 @@
     object-fit: cover;
 
 }
-@media (min-width: 320px) and (max-width: 480px){
+/*GLOBAL*/
+@media (max-width: 767.99px){
     .testimonie_container .slider .slides_wrap{
         width: 90%;
-        height: 250px;
+        height: 65%;
     }
-    .testimonie_container .slider .slides_wrap .slides{
-        grid-column-gap: 1%;
-    
-    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
     .testimonie_container .slider .slides_wrap .slides .slide .first_div{
         height: 30%;
         padding-top: 5px;
@@ -130,4 +131,41 @@
     
     }
     
+}
+/* low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+    .testimonie_container .slider .slides_wrap .slides .slide .first_div{
+        height: 30%;
+        padding-top: 5px;
+    }
+    .testimonie_container .slider .slides_wrap .slides .slide > div img{
+        height: 80px;
+        width: 80px;
+      }
+      .testimonie_container .slider .slides_wrap .slides .slide > div h3{
+        margin-top: 5px;
+        font-size: .9rem;
+      }
+      .testimonie_container .slider .slides_wrap .slides .slide .second_div p{
+        width: 90%;
+        text-align: center;
+        font-size: .8rem;
+    }
+    .testimonie_container .slider .navs{
+        bottom: 10%;
+        height: 20px;
+
+        align-items: flex-start;
+        grid-column-gap: 10px;
+    }
+    .testimonie_container .slider .navs > div{
+        width: 30px;
+        height: 30px;
+    }
+    .testimonie_container .slider .navs > div img{
+        height: 50%;
+    
+    }
+
+
 }

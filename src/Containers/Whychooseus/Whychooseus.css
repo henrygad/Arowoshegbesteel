@@ -7,3 +7,9 @@
     }
 
 }
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+    .choose_us{
+       height: 1400px;
+    }
+}

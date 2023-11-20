@@ -10,9 +10,21 @@
     height: 60%;
     width: 100%;
 }
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480.99px){
     .testimonie_container .title{
         height: 50px;
+    
+        align-items: center;
+    }
+    .testimonie_container .content{
+        height: 80%;   
+
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+    .testimonie_container .title{
+        height: 100px;
     
         align-items: flex-end;
     }
@@ -20,4 +32,5 @@
         height: 80%;   
 
     }
+
 }

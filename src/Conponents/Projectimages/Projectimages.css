@@ -20,13 +20,30 @@
 .project_images .sliders_div > div{
     height: 50%;
 }
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480.99px){
     .project_images .title{
         height: 50px;
-        width: 90%;
+    
         margin: 0 auto;
-        align-items: flex-end;
+        align-items: center;
 
+    }
+    .project_images .sliders_div{
+        height: 80%;
+        grid-row-gap: 1%;
+
+        justify-content: center;
+    }
+
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.99px){
+    .project_images .title{
+        height: 100px;
+        width: 100%;
+        margin: 0 auto;
+
+        justify-content: center;
     }
     .project_images .sliders_div{
         height: 80%;

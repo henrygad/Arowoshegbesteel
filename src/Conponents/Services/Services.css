@@ -96,7 +96,7 @@
         width: 70%;
     
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 5px;
+        grid-row-gap: 10px;
     }
     .services_container .grid_container .box{
         height: 250px;
@@ -105,11 +105,11 @@
         grid-gap: 8%;
     }
     .services_container .grid_container .box .second_div{
-        height: 25%;
+        height: 20%;
         padding: 0;
     }
     .services_container .grid_container .box .second_div p{
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .services_container .grid_container .box .second_div a{
         max-height: 50px;

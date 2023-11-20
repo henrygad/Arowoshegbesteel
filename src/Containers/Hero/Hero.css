@@ -6,7 +6,7 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .hero_container{
-        height: 85vh;
+        height: 94vh;
         padding-left: 0%;
         padding-right: 0%;
     }
@@ -15,7 +15,7 @@
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767.99px){
     .hero_container{
-        height: 100vh;
+        height: 91vh;
         padding-left: 0%;
         padding-right: 0%;
     }
