@@ -1,8 +1,7 @@
 .services_container .grid_container .box  .slider{
-    background-color: white;
+    background-color: #fff;
     height: 70%;
-    filter: drop-shadow(0px 5px 1px rgba(0,0 , 0, .25) );
-    overflow: hidden;
+    filter: drop-shadow(0px 5px 1px rgba(0, 0 , 0, .25) );
 }
 .services_container .grid_container .box  .slider,
 .services_container .grid_container .box  .second_div{
@@ -10,8 +9,16 @@
    overflow: hidden;
 }
 .services_container .grid_container .box  .slider .slides{
-    width: 100%;
+    position: relative;
+    left: 0;
+    width: 300%;
     height: 100%;  
+   /*  background-color: red; */
+   transition: all 5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .services_container .grid_container .box  .slider .slides img{
     object-fit: cover;
@@ -32,6 +39,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: 90;
 }
 .services_container .grid_container .box  .slider .slider_nav img{
     height: 60%;

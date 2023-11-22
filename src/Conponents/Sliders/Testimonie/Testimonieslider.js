@@ -52,7 +52,7 @@ const Testimonieslider = ( {img1, img2, nav1, nav2}) => {
             </div>
           </div>
         </div>
-       <div className='navs'>
+       <div className='navs '>
         <div className='left'><img src={nav2} alt=''/></div>
         <div className='right'><img src={nav1} alt='' /></div>
        </div>
