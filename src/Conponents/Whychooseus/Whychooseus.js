@@ -19,7 +19,10 @@ const Whychooseus = () => {
             </div>
             <div className='second_div'>
               <p>
-                We've been active since 2010.  We have over the years provided services for both commercial and industrial establishments within and outside Nigeria. with over100 done projects, we guarantee that will give you the best.
+                We've been active since 2010.  
+                We have over the years provided services for both commercial and industrial 
+                establishments within and outside Nigeria. with over 100 done projects, we guarantee 
+                that will give you the best.
               </p>
             </div>
           </div>
@@ -30,7 +33,10 @@ const Whychooseus = () => {
             </div>
             <div className='second_div'>
               <p>
-               Our top priority at Arowoshegbe Steel Construction is expertise. For this reason, we have professionals on our staff.  We assign the best workers to each project, from design and manufacturing through installation, plant modification, maintenance, down to service and consultancy.
+               Our top priority at Arowoshegbe Steel Construction is expertise. 
+               For this reason, we have professionals on our staff.  
+               We assign the best workers to each project, from design and manufacturing through installation, 
+               plant modification, maintenance, down to service and consultancy.
               </p>
             </div>
           </div>
@@ -41,7 +47,9 @@ const Whychooseus = () => {
             </div>
             <div className='second_div'>
               <p>
-               Quality is our goal at Arowoshegbe Steel Construction. For that reason, we deploy and supply heigh quality materials within and outside the country for fabrication manufa
+               Quality is our goal at Arowoshegbe Steel Construction. 
+               For that reason, we deploy and supply heigh quality 
+               materials within and outside the country for fabrication manufacturing
               </p>
             </div>
           </div>
