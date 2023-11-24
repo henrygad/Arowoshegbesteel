@@ -1,11 +1,77 @@
 import './Testimonieslider.css'
 
 const Testimonieslider = ( {img1, img2, nav1, nav2}) => {
+  let currentposition = 200
+  let  newposition = 0
+  let previousposition = 0
+  let count = 0
+
+  function calc(value) {
+    count += 50
+
+    if(count === currentposition) {
+       count = 0 }
+        
+       if(currentposition === 200){
+         newposition = currentposition - count
+         previousposition = newposition
+         //cp 150
+      } else if (currentposition === 150){
+         newposition = currentposition - count
+         previousposition = newposition
+         //cp 100
+      } else if (currentposition === 100){
+        newposition = currentposition - count
+        previousposition = newposition
+        //cp is 50
+      }
+
+       if(value === "left"){
+          if (newposition === 150 ){
+            return 50
+          } else if (newposition === 100){
+            return 100
+          } else if (newposition === 50){
+            return 150
+          }
+       }
+
+      if(value === 'right'){
+          if (previousposition === 150 ){
+            return 100
+        } else if (previousposition === 100){
+          return 50
+        } else if (previousposition === 50){
+          return 0
+        }
+      }
+
+      
+
+  }
+
+
+
+  const testimoniesslidernavleft = (e) => {
+    const projectslider_el = document.querySelector('.project_slider')
+     const result = calc('left')
+
+     projectslider_el.style.left = '-'+ result + '%'     
+  }
+  const testimoniesslidernavright = (e) => {
+     const projectslider_el = document.querySelector('.project_slider')
+     const result = calc('right')
+      projectslider_el.style.left = '-'+ result + '%'
+  }
+
+
+
+
   return (
     <>
     <div className='slider'>
         <div className='slides_wrap'>
-          <div className='slides'>
+          <div className='slides project_slider'>
             <div className='slide one'>
               <div className='first_div'>
                 <img  src={img1} alt=''/>
@@ -53,8 +119,8 @@ const Testimonieslider = ( {img1, img2, nav1, nav2}) => {
           </div>
         </div>
        <div className='navs '>
-        <div className='left'><img src={nav2} alt=''/></div>
-        <div className='right'><img src={nav1} alt='' /></div>
+        <div className='left' ><img src={nav2} alt='' onClick={ e => testimoniesslidernavleft(e)}/></div>
+        <div className='right' ><img src={nav1} alt='' onClick={ e => testimoniesslidernavright(e)} /></div>
        </div>
       </div>
       

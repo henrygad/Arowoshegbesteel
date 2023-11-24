@@ -25,10 +25,10 @@ const Nav = () => {
           <span></span>
         </div>
         <ul>
-          <li>about</li>
-          <li>services</li>
-          <li>projects</li>
-          <li>contact</li>
+          <li><a href='#about'>about</a></li>
+          <li><a href='#services'>services</a></li>
+          <li><a href='#projects'>projects</a></li>
+          <li><a href='#contact'>contact</a></li>
         </ul>
       </div>
     </>      

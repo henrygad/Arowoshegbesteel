@@ -31,7 +31,7 @@ const CTA = () => {
       </div>
       <div className=' box center' >
         <h3>Make an appiontment today!</h3>
-        <a href='#contact'>get free consultation <img src={buttonarrow} alt='' /> </a>
+        <a href='#contact-me'>get free consultation <img src={buttonarrow} alt='' /> </a>
       </div>
       <div className=' box right'>
         <div className='img_div'>< MdDesignServices className='img' /></div>

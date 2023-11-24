@@ -18,6 +18,7 @@ const sliderheader = () => {
         <Heroslide1   heroicon1={heroicon1} heroicon2={heroicon2} heroicon3={heroicon3} />
         <Heroslide2  />
         <Heroslide3   />
+        <Heroslide1   heroicon1={heroicon1} heroicon2={heroicon2} heroicon3={heroicon3} />
       </div>
       
     </div>

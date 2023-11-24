@@ -3,7 +3,7 @@ import './Projectimages.css'
 
 const Projectimages = () => {
   return (
-    <section className="project_images">
+    <section className="project_images" id='projects'>
       <CPprojectimages/>
     </section>
   )

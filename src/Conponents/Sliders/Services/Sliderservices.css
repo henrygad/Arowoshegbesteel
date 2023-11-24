@@ -13,8 +13,7 @@
     left: 0;
     width: 300%;
     height: 100%;  
-   /*  background-color: red; */
-   transition: all 5s ease-in-out;
+    transition: all .25s linear;
 
     display: flex;
     justify-content: center;
@@ -40,6 +39,7 @@
    justify-content: center;
    align-items: center;
    z-index: 90;
+   cursor: pointer;
 }
 .services_container .grid_container .box  .slider .slider_nav img{
     height: 60%;

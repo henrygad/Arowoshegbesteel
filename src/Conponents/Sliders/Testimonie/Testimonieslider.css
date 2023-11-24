@@ -20,7 +20,7 @@
     left: .5%;
     width: 200%;
     height: 100%;
-    /* left: -50%; */
+    transition: all .25s linear;
 
     display: flex;
     grid-column-gap: 1.5%;
@@ -74,6 +74,7 @@
     justify-content: center;
     align-items: flex-end;
     grid-column-gap: 40px;
+    cursor: pointer;
 }
 .testimonie_container .slider .navs > div{
     width: 40px;

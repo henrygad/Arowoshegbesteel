@@ -4,7 +4,7 @@ import "./Header.css"
 
 const Header = () => {
   return (
-    <div  className='header_grid'>
+    <div  className='header_grid' id="home">
        <div className='header_social_media'>
          <CPsocials />
         </div>
