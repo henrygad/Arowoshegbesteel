@@ -19,7 +19,7 @@ const Whychooseus = () => {
             </div>
             <div className='second_div'>
               <p>
-                We've been active since 2010.  
+                We've been active since 1994.  
                 We have over the years provided services for both commercial and industrial 
                 establishments within and outside Nigeria. with over 100 done projects, we guarantee 
                 that will give you the best.

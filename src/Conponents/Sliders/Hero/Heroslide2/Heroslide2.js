@@ -6,11 +6,11 @@ const Headerslide2 = ({slideimg2}) => {
           <div className="slide_title"><h2>Construction solution for industial equipments</h2></div>
           <div className='slide_text two'>
             <div className='years_experience'>
-              <h3>5+</h3>
+              <h3>30+</h3>
               <p>Year of experience</p>
             </div >
             <div className='completed_projects'>
-            <h3>35</h3>
+            <h3>200</h3>
               <p>completed project</p>
             </div>
           </div>
