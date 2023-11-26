@@ -1,6 +1,6 @@
 import './Testimonieslider.css'
 
-const Testimonieslider = ( {img1, img2, nav1, nav2}) => {
+const Testimonieslider = ( {img1, img2, img3, img4, nav1, nav2}) => {
   let currentposition = 200
   let  newposition = 0
   let previousposition = 0
@@ -75,44 +75,44 @@ const Testimonieslider = ( {img1, img2, nav1, nav2}) => {
             <div className='slide one'>
               <div className='first_div'>
                 <img  src={img1} alt=''/>
-                <h3>John Mark</h3>
+                <h3>Nurex Aluminum</h3>
               </div>
               <div className='second_div'>
                 <p>
-                  "I recently had my kitchen extractor system designed and installed by Arowoshege, and I am extremely impressed with the results. The team was professional and efficient, taking care to understand my needs and preferences before proposing a solution. 
+                  "Thanks for the good job Arowoshegbe construction 🦺 I really appreciate how you do your job is very, very neat and definite, you have a good finish up….keep it up…I still need you to come for more job for us." 
                 </p>
               </div>
             </div>
             <div className='slide two'>
               <div className='first_div'>
                   <img  src={img2} alt=''/>
-                  <h3>Henry markwell</h3>
+                  <h3>5 Stor Technical Services</h3>
                 </div>
                 <div className='second_div'>
                   <p>
-                    Arowoshege did a perfect ventilation system, but also installed it efficiently and professionally. My factory now has clean and fresh air all thanks to their excellent work. I am beyond satisfied with their service."
+                    "I would like to formally and sincerely express my gratitude for the amazing work you accomplished for us @Arowoshegbesteelconstruction   You are highly worthy and trusted."
                   </p>
               </div>
             </div>
             <div className='slide three'>
               <div className='first_div'>
-                  <img  src={img1} alt=''/>
-                  <h3>piliph brown</h3>
+                  <img  src={img3} alt=''/>
+                  <h3>For Technical Services</h3>
                 </div>
                 <div className='second_div'>
                   <p>
-                    "As a factory manager, I have struggled with finding the right ventilation system that not only worked effectively but also fit our budget. That was until I came across arowoshebge. 
+                    "Fantastic work, there delivered the best quality, partner with them on a project, they did not disappoint Us 👍." 
                   </p>
               </div>
             </div>
             <div className='slide four'>
               <div className='first_div'>
-                  <img  src={img2} alt=''/>
-                  <h3>Rosel Mose</h3>
+                  <img  src={img4} alt=''/>
+                  <h3>Adetech Aluminum</h3>
                 </div>
                 <div className='second_div'>
                   <p>
-                  "I recently had a factory ventilation system designed and constructed by arowoshebge, and I must say, the results have exceeded my expectations.
+                  "Working with experts always make a difference in our industry and @aworosegbe steel construction are definitely one of the best."
                   </p>
                 </div>
             </div>

@@ -2,8 +2,10 @@ import Titlestroke from '../Titlestroke/Titlestroke'
 import Testimonieslider from '../Sliders/Testimonie/Testimonieslider'
 import './Testimonie.css'
 
-import testimonie1 from '../../Asset/testimonies/testimonie1.jpg'
-import testimonie2 from '../../Asset/testimonies/testimonie2.jpg'
+import testimonial1 from '../../Asset/testimonies/testimonialslogo1.jpg'
+import testimonial2 from '../../Asset/testimonies/testimonialslogo2.jpg'
+import testimonial3 from '../../Asset/testimonies/testimonialslogo3.jpg'
+import testimonial4 from '../../Asset/testimonies/testimonialslogo4.jpg'
 
 
 import slidernavrleft from '../../Asset/slidernavleft.svg'
@@ -16,7 +18,7 @@ const Testimonie = () => {
        <Titlestroke text={"what clients say"} />
       </div>
       <div className='content'>
-        <Testimonieslider img1={testimonie1} img2={testimonie2}  nav1={slidernavright}  nav2={slidernavrleft} />
+        <Testimonieslider img1={testimonial3} img2={testimonial1} img3={testimonial2} img={testimonial4} nav1={slidernavright}  nav2={slidernavrleft} />
       </div>
     </>
   )

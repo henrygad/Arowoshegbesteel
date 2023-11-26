@@ -30,8 +30,8 @@ const Footer = () => {
               09055434441
             </p>
             <p>
-             arowosegbesteelconstruction@gmail.com
-             yinka4real01@email.com
+             arowosegbesteelconstructions@gmail.com
+             yinka4real01@gmail.com
             </p>
           </div>
          </div>
