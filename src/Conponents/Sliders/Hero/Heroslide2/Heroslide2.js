@@ -10,7 +10,7 @@ const Headerslide2 = ({slideimg2}) => {
               <p>Year of experience</p>
             </div >
             <div className='completed_projects'>
-            <h3>200</h3>
+            <h3>200+</h3>
               <p>completed project</p>
             </div>
           </div>
