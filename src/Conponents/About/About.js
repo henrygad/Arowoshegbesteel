@@ -20,7 +20,7 @@ const About = () => {
               to providing the highest quality solutions for our clients. From custom steel fabrication
                to advanced ventilation systems, we have the expertise to meet all your industrial needs.
             <span>
-            Founded by Mr. Arowoshegbe in 1994, we believe that quality is non-negotiable. 
+            Founded by Mr. Arowoshegbe in 1993, we believe that quality is non-negotiable. 
             That's why all our products undergo rigorous testing and adhere to international safety standards. 
             We take pride in our work and strive to exceed our clients' expectations every time.
             </span>     
