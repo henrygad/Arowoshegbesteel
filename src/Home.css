@@ -1,0 +1,31 @@
+.header_social_icon{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-gap: 10px;
+    height: auto;
+    min-height: 20px;
+    padding-right: 10px;
+}
+.header_social_icon .img{
+    color: darkblue;
+}
+.header_logo{
+    height: auto;
+    min-height: 20px;
+    padding-left: 10px;
+}
+.header_logo img{
+    height: 40px;
+}
+.header_nav{
+    height: auto;
+    min-height: 20px;
+    padding-right: 10px;
+}
+
+
+/* hero section start here */
+.hero{
+
+}

@@ -1,0 +1,61 @@
+.hero_slides .slide.three {
+    background-image: url('./heroslide3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero_slides .slide.three  .content{
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+}
+.hero_slides .slide.three  .content .box{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 25%;
+    height: auto;
+    padding: 15px;
+    border: 0;
+    border-radius: 2px;
+    background-color: var(--fourth-color);
+}
+.hero_slides .slide.three  .content .box h3{
+    color: blue;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.hero_slides .slide.three  .content .box p{
+    line-height: 25px;
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .hero_slides .slide_text.three {
+        width: 65%;
+        height: 30%;
+    }
+    .hero_slides .slide_text.three h3{
+        font-size: .8rem;
+    }
+    .hero_slides .slide_text.three p{
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767.99px){
+    .hero_slides .slide_text.three {
+        width: 65%;
+        height: 30%;
+    }
+    .hero_slides .slide_text.three h3{
+        font-size: 1.2rem;
+    }
+    .hero_slides .slide_text.three p{
+        font-size: 1rem;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+
+}
