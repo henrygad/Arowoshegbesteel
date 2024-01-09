@@ -6,15 +6,16 @@
 }
 .hero_slides .slide.three  .content{
     position: absolute;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    padding-left: 10%;
     z-index: 10;
 }
 .hero_slides .slide.three  .content .box{
-    position: relative;
-    top: 10%;
-    left: 10%;
-    width: 25%;
+    width: auto;
     height: auto;
+    max-width: 350px;
     padding: 15px;
     border: 0;
     border-radius: 2px;
@@ -30,32 +31,21 @@
     color: black;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
-    .hero_slides .slide_text.three {
-        width: 65%;
-        height: 30%;
+@media (min-width: 481px) and (max-width: 767.99px){
+    .hero_slides .slide.three  .content .box h3{
+        font-size: 20px;
     }
-    .hero_slides .slide_text.three h3{
-        font-size: .8rem;
-    }
-    .hero_slides .slide_text.three p{
-        line-height: 20px;
-        margin-top: 10px;
-    }
+   
 
 }
-@media (min-width: 481px) and (max-width: 767.99px){
-    .hero_slides .slide_text.three {
-        width: 65%;
-        height: 30%;
+@media (min-width: 320px) and (max-width: 480px){
+    .hero_slides .slide.three  .content .box{
+        max-width: 250px;
+        padding: 10px
     }
-    .hero_slides .slide_text.three h3{
-        font-size: 1.2rem;
+    .hero_slides .slide.three  .content .box h3{
+        font-size: 20px;
     }
-    .hero_slides .slide_text.three p{
-        font-size: 1rem;
-        line-height: 25px;
-        margin-top: 10px;
-    }
+
 
 }

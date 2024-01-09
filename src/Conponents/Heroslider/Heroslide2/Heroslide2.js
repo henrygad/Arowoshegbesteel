@@ -7,8 +7,7 @@ const Headerslide2 = ({slideimg2}) => {
               <div className='title'>
                 <h2>Construction solution for industial equipments</h2>
               </div>
-              <div className='content'>
-                <div className='flex_box_2d boxs'>
+              <div className='text'>
                     <div className='box one'>
                       <h3>30+</h3>
                       <p>Year of experience</p>
@@ -17,7 +16,6 @@ const Headerslide2 = ({slideimg2}) => {
                       <h3>200+</h3>
                       <p>completed project</p>
                     </div>
-                </div>
               </div>
           </div>
     </div>

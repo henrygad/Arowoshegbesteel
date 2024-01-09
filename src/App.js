@@ -1,17 +1,12 @@
-import {Header, Hero, About, Services, Whychooseus, Projectimages, Testimonie, CTA, Footer} from "./Containers"
-import buttonarrow from './Asset/buttonarrow.svg'
+import Home from './Home'
+//import buttonarrow from './Asset/buttonarrow.svg'
 
-/* function getELement(e){
-
-  console.log(e)
- } */
-
- //getELement()
 
 const App = () => {
 
   return (
-    < div className="body_wraper"  >
+    <Home />
+   /*  < div className="body_wraper"  >
       <div className="header_wrap">
         <Header />
       </div>
@@ -30,11 +25,11 @@ const App = () => {
       <div className="side_nav">
         <a href="#home"><img src={buttonarrow} alt="" /></a>
       </div>
-    </div>
+    </div> */
   )
 }
 
-function displaysidenav() {
+/* function displaysidenav() {
   const sidenav_el = document.querySelector('.side_nav')
   const result = checksection()
   if(result){
@@ -56,4 +51,5 @@ const checksection = () => {
 }
 
 window.onscroll = displaysidenav;
+ */
 export default App

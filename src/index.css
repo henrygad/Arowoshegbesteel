@@ -1,17 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Google+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Volkhov:wght@400;700&display=swap");
+@import url('responsivelayout/index.css');
 
-*::after,
-::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0; 
-}
 :root{
     --google-font: 'Google Sans';
     --poppins-font: 'Poppins';
@@ -22,12 +12,25 @@
     --fourth-color: #fff;
     ---text-color: #333333
 }
-html{
+html,
+head{
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     scroll-behavior: smooth;
+}
+header,
+nav,
+main,
+footer{
+    background-color: var(--fourth-color);
+}
+header,
+main > section,
+footer > section{
+    padding: 0 10%;
 }
 h1, h2{
     font-family: var(--volkhov-font);
@@ -41,162 +44,55 @@ p{
     font-family: var(--poppins-font);
     color: var(---text-color);
 }
-h1{
-    font-size: 4rem;
-}
-h2{
-    font-size: 2.1rem;
-}
-h3{
-    font-size: 1.2rem;
-}
-li{
-    font-size: .9rem;
-}
-p{
-    font-size: 1.1rem;
-}
 a{
-    font-size: 1.1rem;
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 }
 button{
     cursor: pointer;
 }
-.header_wrap{
-    padding-top: 5px;
-    width: 100%;
-    background-color: var(--fourth-color);
-    z-index: 10;
+.button{
+    display: block;
+    text-align: center;
+    color: #fff;
+    width: auto;
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 20px;
+    filter: drop-shadow(.5px .5px .5px rgba(0, 0, 0, .5) );
+    text-decoration: none;
 }
-main, footer{
-    width: 100%;
-    overflow: hidden;
+.button:active{
+    background-color: var(--primary-color);
+    color: black;
 }
-main{
-    margin-bottom: 600px;
-}
-main section {
-    position: relative;
-    height: 1000px;
-    padding-left: 5%;
-    padding-right: 3%;
-    background-color: var(--fourth-color);
 
-    display: flex;
-    flex-wrap: wrap;
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 768px) and (max-width: 1024.9px){
+    header,
+    main > section,
+    footer > section{
+        padding: 0 5%;
+    }
+
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-bottom: 0;
-    z-index: -1;
-}
-footer section{
-    height: 600px;
+@media (min-width: 481px) and (max-width: 767.99px){
+    header,
+    main > section,
+    footer > section{
+        padding: 0 2.5%;
+    }
     
-    display: flex;
-    flex-wrap: wrap;
 }
-.body_wraper{
-    position: relative;
-}
-.body_wraper .side_nav{
-    position: fixed;
-    bottom: 10%;
-    right: .5%;
-    width: 35px;
-    height: 45px;
-    border-radius: 1px;
-
-    display: none;
-    background-color: #333;
-    opacity: .5;
-    z-index: 200;
-}
-.body_wraper .side_nav a{
-    width: inherit;
-    height: inherit;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.body_wraper .side_nav a img{
-    transform: rotate(-90deg);
-    width: 80%;
-    height: 80%;
-}
-
 
 @media (min-width: 320px) and (max-width: 480px){
-    h1{
-        font-size: 1.8rem;
+    header,
+    main > section,
+    footer > section{
+        padding: 0 2.5%;
     }
-    h2{
-        font-size: .8rem;
-    }
-    h3{
-        font-size: .6rem;
-    }
-    li{
-        font-size: .5rem;
-    }
-    p{
-        font-size: .6rem;
-    }
-    a{
-        font-size: .6rem;
-    }
-    main{
-        margin-bottom: 500px;
-    }
-
-    main section {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    .body_wraper .sidenav{
-        width: 30px;
-        height: 40px;
-    }
-}
-/*low resolution tablets, mobiles (landscape)*/
-@media (min-width: 481px) and (max-width: 767.99px){
-    h1{
-        font-size: 2.4rem;
-    }
-    h2{
-        font-size: 1.2rem;
-    }
-    h3{
-        font-size: 1.2rem;
-    }
-    li{
-        font-size: .65rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    a{
-        font-size: 1rem;
-    }
-    main{
-        margin-bottom: 500px;
-    }
-
-    main section {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .body_wraper .sidenav{
-        width: 32px;
-        height: 42px;
-    }
-
+    
+   
 }

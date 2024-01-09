@@ -3,35 +3,41 @@ import './Nav.css'
 const Nav = () => {
 
 
-  const Addresponsivenav = () => {
+  const openmenu = () => {
     const hamburgar_el = document.querySelector('.hamburgar')
-    hamburgar_el.classList.add('responsivenav')
+    hamburgar_el.classList.toggle('openmenu')
   }
-  const Removeresponsivenav = () => {
+  const removemenu = () => {
     const hamburgar_el = document.querySelector('.hamburgar')
-    hamburgar_el.classList.remove('responsivenav')
+    hamburgar_el.classList.remove('openmenu')
   }
 
   return (
-    <>
-      <div className='hamburgar' onClick={ () => Addresponsivenav()} >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div className='header_nav'>
-        <div className='close' onClick={ () => Removeresponsivenav() } >
+    <nav className='header_nav_container'>
+
+      <div className='hamburgar' onClick={openmenu}>
+        <div className='wrap'>
+          <span></span>
           <span></span>
           <span></span>
         </div>
-        <ul>
-          <li><a href='#about'>about</a></li>
-          <li><a href='#services'>services</a></li>
-          <li><a href='#projects'>projects</a></li>
-          <li><a href='#contact'>contact</a></li>
+      </div>
+
+      <div className='header_nav_wraper'>
+
+        <div className='close_wraper' onClick={removemenu}>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul className='nav_list'>
+          <li className='list'><a href='#about'>about</a></li>
+          <li className='list'><a href='#services'>services</a></li>
+          <li className='list'><a href='#projects'>projects</a></li>
+          <li className='list'><a href='#contact'>contact</a></li>
         </ul>
       </div>
-    </>      
+    </nav>      
   )
 }
 
