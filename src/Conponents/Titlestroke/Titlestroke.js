@@ -14,4 +14,4 @@ const Titlestroke = ({text, color}) => {
   )
 }
 
-export default Titlestroke
+export default Titlestroke;

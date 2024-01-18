@@ -5,7 +5,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 8px;
+    padding-right: 5px;
 }
 .header_social_icon .img{
     
@@ -24,35 +25,30 @@
     min-height: 20px;
     padding-right: 10px;
 }
+/* end of header design */
 
 
-/* hero section start here */
+/* 
+start of hero design */
 .hero{
    
 
 }
-/* end of hero section */
+/* end of hero section deign */
 
 
 
-/* start of about us section */
+/*
+ start of about us section deign */
 .about_section{
    padding-top: 100px;
    padding-bottom: 100px;
 }
 .about_section .about_title{
-    height: auto;
-    width: 100%;
-    text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
-}
-.about_title h2{
-
+    padding-bottom: 50px;
 }
 .about_content{
-    padding-top: 25px;
-    padding-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
     grid-gap: 20px;
@@ -69,7 +65,7 @@
     padding-bottom: 50px;
 }
 .about_content .text .text_wrap > p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
   }
   .about_content .text .text_wrap p span{
@@ -105,10 +101,11 @@
      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .8));
      object-fit: cover;
   }
-/* end of about us section */
+/* end of about us section design */
 
 
-/* start of products section */
+/*
+start of products section */
 .products_section{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -116,11 +113,10 @@
 }
 .products_section .products_title{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .products_section .products_grid{
     grid-gap: 20px;
-    margin-top: 50px;
 }
 .products_section .products_grid .product_content{
     position: relative;
@@ -164,36 +160,215 @@
     z-index: 21;
 }
 .product_content .product_btn a{
-    padding: 15px 20px;
+    padding: 15px 10px;
     min-width: 180px;
     margin: 0 auto;
 }
-
 /* end of products section */
+
+
+/*  
+start of the why choose us section design
+*/
+.whychooseus_container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.whychooseus_container > .title{
+    padding-top: 20px;
+    padding-bottom: 50px;  
+}
+.whychooseus_container .whychooseus_flexbox{
+    grid-gap: 20px;
+}
+.whychooseus_container .whychooseus_flexbox > div{
+    padding: 20px;
+    text-align: center;
+}
+.whychooseus_container .whychooseus_flexbox .two{
+    background-color: #f3efef;
+}
+.whychooseus_container .whychooseus_flexbox > div .img{
+    
+}
+.whychooseus_container .whychooseus_flexbox > div .title{
+    padding: 25px 0;  
+}
+.whychooseus_container .whychooseus_flexbox > div .title h3{
+   font-size: 20px;
+   font-weight: bold;
+}
+.whychooseus_container .whychooseus_flexbox > div .text{
+    
+}
+/* end of whychooseus section design  */
+
+
+/* 
+  start of feature projects section design
+ */
+ .featureprojects_container{
+    padding:100px .09%;
+    background-color: #f3efef;
+ }
+ .featureprojects_container > .title{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+ .featureprojects_container .projects_sliders{
+
+ }
+ .featureprojects_container .projects_sliders > div{
+    margin-bottom: 10px;
+    height: 300px;
+ }
+ /* end of feature project section design */
+
+
+ /* 
+ start of client reviews section design*/
+ .clientreviews_container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
+ }
+ .clientreviews_container > .title{
+    padding: 20px 0 50px 0;
+ }
+ .clientreviews_container .clientreviews_slider{
+    min-height: 400px;
+    width: 100%;
+ }
+ /* end of  client reviews section design*/
+
+ /* 
+ start of contact us section design */
+ .contactus_container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f3efef;
+ }
+ .contactus_container > .title{
+    padding-top: 20px;
+    padding-bottom: 50px;
+ }
+ .contactus_container .contactus_content{
+    height: auto;
+    width: 100%;
+ }
+ .contactus_content .ideaprocess-container{
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+
+ }
+ .contactus_content .ideaprocess-container .flex_boxs{
+    grid-gap: 20px;
+    padding: 1% 4%;
+ }
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box{
+    width: auto;
+    height: auto;
+    min-width: 300px;
+    padding: 10px 15px;
+    background-color: #f3efefab;
+    filter: drop-shadow(2px -2px 4px rgba(0, 130, 197, .1));
+    border: 0;
+    border-radius: 2px;
+ }
+
+ 
+ /*  */
+ .contactus_content .contactusform_container{
+    width: auto;
+    height: auto;
+    min-width: 320px;
+    max-height: 420px;
+    padding-top: 50px;
+    background-color: #f3efef;
+ }
 
 
 
 @media (min-width: 481px) and (max-width: 767.99px){
+
+    /* start of header section design */
     .header_social_icon{
         grid-gap: 6px;
     }
-
     .about_content .image img{
         height: 350px;
         width: 350px;
      }
-    
+     /* end of header section design*/
+
+
+     /* 
+     start of feature projects design */
+     .featureprojects_container .projects_sliders > div{
+        height: 250px;
+        margin-bottom: 5px;
+     }
+     .featureprojects_container > .title{
+        padding-left: 0%;
+        padding-right: 0%;
+     }
+     /* end of feature projects design */
+
+
+     /* 
+     start of client reviews section design */
+     .clientreviews_container .clientreviews_slider{
+        height: px;
+     }
+    /* end of client reviews section design */
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+    /* 
+    start of about us  section design  */
     .about_content .image img{
         height: 300px;
         width: 300px;
      }
+     /* end of about us  section design */
+
+
+
+     /* 
+     start of products section design */
      .products_section .products_grid .product_content{
         width: 90%;
         margin: 0 auto;
     }
+    /* end of products section design */
+
+
+     /* 
+     start of feature projects design */
+     .featureprojects_container .projects_sliders > div{
+        height: 200px;
+         margin-bottom: 5px;
+     }
+     .featureprojects_container > .title{
+        padding-left: 0%;
+        padding-right: 0%;
+     }
+     /* end of feature projects design */
+
+
+      /* 
+     start of client reviews section design */
+     .clientreviews_container .clientreviews_slider{
+        height: px;
+     }
+    /* end of client reviews section design */
     
    
 }

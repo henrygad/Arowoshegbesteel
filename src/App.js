@@ -52,4 +52,5 @@ const checksection = () => {
 
 window.onscroll = displaysidenav;
  */
+
 export default App

@@ -1,96 +1,250 @@
-import './slider.css'
+//
+//
+//
+const Displayarrownav = (slidesEl, numberOfSlides, arrowNavNext, arrowNavPrevious) => {
+        const displayOn = 'flex'
+        const displayOff = 'none' 
+        arrowNavNext.style.display = arrowNavPrevious.style.display = displayOn
 
 
-
-const Currectposition = slidesEle =>{
-    const getCurrentPosition = slidesEle.style.left
-    return parseFloat(getCurrentPosition) * -100 / 100;
-  }
-
-const Moveslide = (getCurrentPosition, slidesEle, numberOfSlides, transition) => {
-    let movesPosition;
-    const transitionOn = transition
-    const transitionOff = 'none'
-    slidesEle.style.transition = transitionOn
-
-    if(getCurrentPosition === parseFloat(numberOfSlides + '00')){
-            slidesEle.style.transition = transitionOff
-            movesPosition = '0%'
-            //
-            setTimeout(() => {
-            slidesEle.style.transition = transitionOn
-            slidesEle.style.left = '-100%'
-            }, .1);
-    }else if(getCurrentPosition <= -200){
-            slidesEle.style.transition = transitionOff
-            movesPosition = '-' + numberOfSlides + '00%'
-            //
-            setTimeout(() => {
-            slidesEle.style.transition = transitionOn
-            slidesEle.style.left = '-200%'
-            }, .1);
-    }else if(getCurrentPosition === -100){
-            movesPosition = '0%'
-    }else if(getCurrentPosition === 0){
-            movesPosition = '-100%'
-    }else if(getCurrentPosition === 100) {
-            movesPosition = '-200%' 
-    }else if(getCurrentPosition === 200){
-            movesPosition = '-300%'
-    } else if(getCurrentPosition === 300){
-            movesPosition = '-400%'
-    }else if(getCurrentPosition === 400){
-        movesPosition = '-500%'
-    }else if(getCurrentPosition === 500){
-            movesPosition = '-600%'
-    }else{
-        alert("Wrong entries")
-    }
-
-
-    slidesEle.style.left = movesPosition;
+        if(slidesEl.style.left === '-' + (numberOfSlides - 1) + '00%'){
+                arrowNavNext.style.display = displayOff
+        }else if(slidesEl.style.left === '0%' ||
+                slidesEl.style.left === '-'+ numberOfSlides + '00%'
+                ){
+                arrowNavPrevious.style.display = displayOff
+        }
 }
- 
- 
-const Arrownavigation = (slidesEle, numberOfSlides, navPosition, transition) => {
-    const getCurrentPosition = Currectposition(slidesEle)
+//
+//
+//
+const Dotbackgrondcolor = (dotNavElArr, slidesEl, numberOfSlides) =>{
+        dotNavElArr.forEach((el, index)=> {
+                el.style.backgroundColor = 'white'
+                el.style.transAnimation = 'all .5s ease'
 
-    if(navPosition.toLowerCase() === 'next'){
-       Moveslide(getCurrentPosition, slidesEle, numberOfSlides, transition)
-    }else if(navPosition.toLowerCase() === 'previous'){ 
-       Moveslide(getCurrentPosition - 200, slidesEle, numberOfSlides, transition)
-    }
+                if(numberOfSlides === parseFloat(slidesEl.style.left) * -1 / 100 &&
+                 index === 0
+                 ){
+                        el.style.backgroundColor = 'gray'
+                }else if(index === parseFloat(slidesEl.style.left) * -1 / 100 ){
+                        el.style.backgroundColor = 'gray'
+               }                        
+        }) 
 }
-
-
-const Displayarrownav = (slidesEle, numberOfSlides, useArrowNavPrevious, useArrowNavNext) => {
-  const getCurrentPosition = Currectposition(slidesEle)
-  const displayOn = 'flex'
-  const displayOff = 'none' 
-  useArrowNavNext.style.display = useArrowNavPrevious.style.display = displayOn
-
-  if(getCurrentPosition === parseFloat(numberOfSlides - 1 + '00') ||
-     getCurrentPosition === parseFloat(numberOfSlides + '00')){
-     useArrowNavNext.style.display = displayOff
-  }else if(getCurrentPosition === - 0 ){
-    useArrowNavPrevious.style.display = displayOff
-  }
-
+//
+//
+//
+const Currectposition = slidesEl =>{
+        let getCurrentPosition;
+       
+        getCurrentPosition = slidesEl.style.left
+        return parseFloat(getCurrentPosition) * -100 / 100;
+   
 }
+//
+//
+//
+const Moveslideleft = (getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr, interval) => {
+        let movesPosition;
+        const transAnimationOn = transAnimation
+        const transAnimationOff = 'none'
+        slidesEl.style.transition = transAnimationOn
 
-export const Slider = (slidesEl, numberOfSlides, transAnimation, arrowNavPosition, arrowNavPrevious, arrowNavNext) => { 
-    const getCurrentPosition = Currectposition(slidesEl)
 
-    if(arrowNavPosition === undefined){
-        Moveslide(getCurrentPosition, slidesEl, numberOfSlides, transAnimation)
-    }else{
-        Arrownavigation(slidesEl, numberOfSlides, arrowNavPosition, transAnimation)
-    }
+        if(getCurrentPosition === numberOfSlides * moves){
+                slidesEl.style.transition = transAnimationOff
+                movesPosition = 0
+                //
+                setTimeout(() => {
+                slidesEl.style.transition = transAnimationOn
+                movesPosition = moves
+                slidesEl.style.left = '-'+movesPosition+'%'
 
-    if(arrowNavPrevious !== undefined || arrowNavNext !== undefined){
-        return;
-    }else{
-        Displayarrownav(slidesEl, numberOfSlides, arrowNavPrevious, arrowNavNext)
-    }
+                if(arrowNavPrevious && arrowNavNext){
+                        Displayarrownav(slidesEl, numberOfSlides, arrowNavNext, arrowNavPrevious)
+                };
+        
+                if(dotNavElArr){
+                        Dotbackgrondcolor(dotNavElArr, slidesEl, numberOfSlides)
+                };
+              }, interval)
+      
+        }else if(getCurrentPosition === 0){
+                movesPosition = moves * 1
+        }else if(getCurrentPosition === moves){
+                movesPosition = moves * 2
+        }else if(getCurrentPosition === moves * 2){
+                movesPosition = moves * 3
+        }else if(getCurrentPosition === moves * 3){
+                movesPosition = moves * 4
+        }else if(getCurrentPosition === moves * 4){
+                movesPosition = moves * 5
+        }else if(getCurrentPosition === moves * 5){
+                movesPosition = moves * 6
+        }else if(getCurrentPosition ===  moves * 6){
+                movesPosition = moves * 7
+        }else if(getCurrentPosition === moves * 7){
+                movesPosition = moves * 8
+        }else if(getCurrentPosition ===  moves * 8){
+                movesPosition = moves * 9
+        }else if(getCurrentPosition ===  moves * 9){
+                movesPosition = moves * 10
+        }else if(getCurrentPosition ===   moves * 10){
+                movesPosition = moves * 11
+        }else if(getCurrentPosition ===   moves * 11){
+                movesPosition = moves * 12
+        }else if(getCurrentPosition ===   moves * 12){
+                movesPosition = moves * 13
+        }else{
+                alert('wrong entries from sliderleft')
+        }
+        slidesEl.style.left = '-'+movesPosition+'%'; 
 
+
+
+        if(arrowNavPrevious && arrowNavNext){
+                Displayarrownav(slidesEl, numberOfSlides, arrowNavNext, arrowNavPrevious)
+        };
+
+        if(dotNavElArr){
+                Dotbackgrondcolor(dotNavElArr, slidesEl, numberOfSlides)
+        };
+}
+//
+//
+//
+const Moveslideright = (getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr, interval) => {
+        let movesPosition;
+        const moveslideright = numberOfSlides * moves 
+        const transAnimationOn = transAnimation
+        const transAnimationOff = 'none'
+        slidesEl.style.transition = transAnimationOn
+
+
+        if(getCurrentPosition === 0){
+                slidesEl.style.transition = transAnimationOff
+                movesPosition =  moveslideright 
+                //
+                setTimeout(() => {
+                        slidesEl.style.transition = transAnimationOn
+                        movesPosition = moveslideright - moves * 1
+                        slidesEl.style.left = '-'+movesPosition+'%'
+
+                        if(arrowNavPrevious && arrowNavNext){
+                                Displayarrownav(slidesEl, numberOfSlides, arrowNavNext, arrowNavPrevious)
+                        };
+                
+                        if(dotNavElArr){
+                                Dotbackgrondcolor(dotNavElArr, slidesEl, numberOfSlides)
+                        };
+                      }, interval)
+        }else if(getCurrentPosition === moveslideright){
+                movesPosition = moveslideright - moves * 1
+        }else if(getCurrentPosition ===  moveslideright - moves * 1){
+                movesPosition = moveslideright - moves * 2
+        }else if(getCurrentPosition === moveslideright - moves * 2){
+                movesPosition= moveslideright - moves * 3
+        }else if(getCurrentPosition === moveslideright - moves * 3){
+                movesPosition= moveslideright - moves * 4
+        }else if(getCurrentPosition === moveslideright - moves * 4){
+                movesPosition= moveslideright - moves * 5
+        }else if(getCurrentPosition === moveslideright - moves * 5){
+                movesPosition= moveslideright - moves * 6
+        }else if(getCurrentPosition === moveslideright - moves * 6){
+                movesPosition= moveslideright - moves * 7
+        }else if(getCurrentPosition === moveslideright - moves * 7){
+                movesPosition= moveslideright - moves * 8
+        }else if(getCurrentPosition === moveslideright - moves * 8){
+                movesPosition= moveslideright - moves * 9
+        }else if(getCurrentPosition === moveslideright - moves * 9){
+                movesPosition= moveslideright - moves * 10
+        }else if(getCurrentPosition === moveslideright - moves * 10){
+                movesPosition= moveslideright - moves * 11
+        }else if(getCurrentPosition === moveslideright - moves * 11){
+                movesPosition= moveslideright - moves * 12
+        }else if(getCurrentPosition === moveslideright - moves * 12){
+                movesPosition= moveslideright - moves * 13
+        }else{
+                alert('wrong entries from slideright')
+        }
+        slidesEl.style.left = '-'+movesPosition+'%'
+
+
+
+        if(arrowNavPrevious && arrowNavNext){
+                Displayarrownav(slidesEl, numberOfSlides, arrowNavNext, arrowNavPrevious)
+        };
+
+        if(dotNavElArr){
+                Dotbackgrondcolor(dotNavElArr, slidesEl, numberOfSlides)
+        };
+}
+//
+//
+//
+export const Arrownavigation = (slidesEl, numberOfSlides, moves, transAnimation, arrowNavPosition, arrowNavPrevious, arrowNavNext, dotNavElArr) => {
+        const getCurrentPosition = Currectposition(slidesEl)
+        const interval = .25
+
+
+        if(arrowNavPosition.toLowerCase() === 'next'){
+                Moveslideleft(getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr, interval)
+        }else if(arrowNavPosition.toLowerCase() === 'previous'){ 
+                Moveslideright(getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr, interval)
+        }else{
+                alert('Add arrow values promptly')
+        }
+}
+//
+//
+//
+export const Dotnavavigation = (slidesEl, dotNavsPosition, moves, transAnimation, dotNavElArr, numberOfSlides, arrowNavPrevious, arrowNavNext) => {
+        let getCurrentPosition;
+
+
+        if(slidesEl &&
+           moves &&
+           dotNavsPosition &&
+           transAnimation
+           ){
+                if(dotNavsPosition === 'first'){
+                        getCurrentPosition = -100                 
+                }else if(dotNavsPosition === 'second'){
+                        getCurrentPosition = 0               
+                }else if(dotNavsPosition === 'third'){
+                        getCurrentPosition = 100              
+                }else if(dotNavsPosition === 'fourth'){
+                        getCurrentPosition = 200                       
+                }else{
+                        alert('Dot nav not avaliable')
+                }
+        }else{
+        alert('Add values promptly')
+        }
+        
+        
+        Moveslideleft(getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr)
+}
+//
+//
+//
+export const Autoplayslider = (slidesEl, numberOfSlides, moves, transAnimation, slideRight, arrowNavPrevious, arrowNavNext, dotNavElArr) => {
+        const interval = 500
+
+
+        if(slidesEl && 
+           numberOfSlides &&
+           moves &&
+           transAnimation
+           ){
+                const getCurrentPosition = Currectposition(slidesEl)
+                if(slideRight === 'right'){
+                       // Moveslideright(getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr, interval)
+                }else {
+                        //Moveslideleft(getCurrentPosition, slidesEl, numberOfSlides, moves, transAnimation, arrowNavPrevious, arrowNavNext, dotNavElArr, interval)
+                }
+        }else{
+                alert('Add values promptly')
+        }
 }

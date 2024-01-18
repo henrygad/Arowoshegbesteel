@@ -34,7 +34,7 @@ const CTA = () => {
         <a href='#contact-me'>get free consultation <img src={buttonarrow} alt='' /> </a>
       </div>
       <div className=' box right'>
-        <div className='img_div'>< MdDesignServices className='img' /></div>
+        <div className='img_div'>< MdDesignServices className='img'/></div>
         <div className='content'>
           <h3>we design</h3>
            <p>

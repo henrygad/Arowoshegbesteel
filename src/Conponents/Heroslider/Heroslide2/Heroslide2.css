@@ -24,18 +24,19 @@
  .hero_slides  .slide.two > .content .text{
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: flex-end;
-    grid-gap: 20px;
-    padding-top: 20%;
-    padding-right: 20%;
+    padding-left: 40%;
+    padding-top: 10%;
  }
  .hero_slides  .slide.two > .content .text .box{
+      display: inline-block;
       width: auto;
       height: auto;
-      max-width: 120px;
-      padding: 10px;
+      padding: 20px 10px;
+      margin-left: 10px;
+      margin-top: 10px;
       text-transform: capitalize;
+      border: 0;
+      border-radius: 2px;
  }
  .hero_slides  .slide.two > .content .text .box.one{
     background-color: var(--primary-color);
@@ -44,13 +45,13 @@
     background-color: var(--secondary-color);
 }
  .hero_slides  .slide.two > .content .text .box h3{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     color: var(  --fourth-color);
  }
  .hero_slides  .slide.two > .content .text .box p{
     color: var(  --fourth-color);
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 5px;
  }
 
@@ -59,7 +60,7 @@
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px){
     .hero_slides  .slide.two > .content .title h2{
-        font-size: 45px;
+        font-size: 40px;
       }
 }
 
@@ -70,19 +71,17 @@
       padding-left: 0px;
    }
     .hero_slides  .slide.two > .content .title h2{
-        font-size: 35px;
+        font-size: 30px;
       }   
-
       .hero_slides  .slide.two > .content .text{
          grid-gap: 10px;
          padding-top: 10%;
          padding-right: 10%;
       }
-
       .hero_slides  .slide.two > .content .text .box h3{
-         font-size: 25px;
+         font-size: 20px;
       }
       .hero_slides  .slide.two > .content .text .box p{
-         font-size: 10px;
+         font-size: 18px;
       }
 }

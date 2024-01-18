@@ -28,6 +28,7 @@ export  const products_list =[
         producttitle: 'Kitchen industrial and domestic extractor system',
         productprice: '',
         productdescription: '',
+        transAnimation: 'all 3s ease-in-out',
     },
     {
         img1: industrialextractor1,
@@ -37,6 +38,7 @@ export  const products_list =[
         producttitle: 'Industrial ventilation installation',
         productprice: '',
         productdescription: '',
+        transAnimation: 'all 3s ease-in-out .2s',
     },
     {
         img1: industrialinstallation1,
@@ -46,6 +48,7 @@ export  const products_list =[
         producttitle: 'Industrial equipment installation',
         productprice: '',
         productdescription: '',
+        transAnimation: 'all 3s ease-in-out .4s',
     },
     {
         img1: steelfracbication1,
@@ -55,6 +58,7 @@ export  const products_list =[
         producttitle: 'Stainless steel fabrications',
         productprice: '',
         productdescription: '',
+        transAnimation: 'all 3s ease-in-out .6s',
     },
     {
         img1: metalfracbication1,
@@ -64,6 +68,7 @@ export  const products_list =[
         producttitle: 'Welding fabrications',
         productprice: '',
         productdescription: '',
+        transAnimation: 'all 3s ease-in-out .8s',
     },
     {
         img1: Trusses1,
@@ -73,6 +78,7 @@ export  const products_list =[
         producttitle: 'Trusses',
         productprice: '',
         productdescription: '',
+        transAnimation: 'all 3s ease-in-out 1s',
     },
    /*  {
         img1: '',

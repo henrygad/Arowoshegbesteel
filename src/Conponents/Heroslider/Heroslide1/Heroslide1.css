@@ -68,7 +68,6 @@
     width: 50px;
     height: 50px;
 }
-
 .hero_slides .slide.one .content_wraper .content .boxs .content .box h3{
     font-size: 18px;
 }
@@ -81,10 +80,19 @@
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px){
     .hero_slides .slide.one .content_wraper > .title h1{
-        font-size: 45px;
+        font-size: 40px;
     }
     .hero_slides .slide.one .content_wraper .content .boxs{
         max-width: 300px;
+    }
+    .hero_slides .slide.one .content_wraper .content .boxs .title h2{
+        font-size: 22px;
+    }
+    .hero_slides .slide.one .content_wraper .content .boxs .content .box h3{
+        font-size: 16px;
+    }
+    .hero_slides .slide.one .content_wraper .content .boxs .content .box p{
+        font-size: 12px;
     }
 }
 
@@ -92,7 +100,7 @@
 /*smartphones mobiles (portrait)*/
 @media (min-width: 320px) and (max-width: 480.99px){
     .hero_slides .slide.one .content_wraper > .title h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .hero_slides .slide.one .content_wraper .content .boxs{
         max-width: 250px;
@@ -103,8 +111,11 @@
     }
     .hero_slides .slide.one .content_wraper .content .boxs .content .box img{
         grid-area: 1/ 1/ span 2/ span 1;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
+    }
+    .hero_slides .slide.one .content_wraper .content .boxs .title h2{
+        font-size: 21px;
     }
     .hero_slides .slide.one .content_wraper .content .boxs .content .box h3{
         font-size: 15px;

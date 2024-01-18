@@ -9,7 +9,7 @@
 }
 .title_stroke .stroke{
     display: block;
-    width: 25%;
+    width: 20%;
     height: 5px;
     border: 0;
     border-radius: 10px;
@@ -22,6 +22,17 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 480px){
 
+@media (min-width: 481px) and (max-width: 767.99px){
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .title_stroke h2{
+        width: auto;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+   
 }

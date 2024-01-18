@@ -21,6 +21,7 @@
     justify-content: flex-end;
     align-items: center;
     grid-column-gap: 25px;
+
 }
 .header_nav_container .header_nav_wraper .nav_list .list{
     flex-shrink: 0;
@@ -32,21 +33,27 @@
     font-size: 14px;
     font-weight: 700;
     color: var(--primary-color);
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.header_nav_container .header_nav_wraper .nav_list .list a:hover{
+    opacity: .8;
+}
+.header_nav_container .header_nav_wraper .nav_list .list a:active{
+    color: var(--secondary-color);
 }
 
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767.99px){
-    .header_nav_container .header_nav_wraper .nav_list{
-        grid-column-gap: 15px;
-    }
-
-
+    
 }
+
+/*Navigation for tablets, mobiles (landscape)*/
 @media (max-width: 550px){
     .header_nav_container .header_nav_wraper{
        display: none;
     }
+
 
     .hamburgar{
         display: flex;
@@ -73,22 +80,24 @@
         background-color: var(--primary-color);
     }  
     .hamburgar.openmenu ~ .header_nav_wraper{
-        display: block;
+        display: flex;
+        
         position: fixed;
-        top: -10%;
-        right: 0;
-        left: 0;
-        height: 100vh;
+        top: 1px;
+        bottom: 1px;
+        right: 1px;
+        left: 1px;
+    
         
         background-color: #333;
-        animation: openmenu .5s linear forwards;
+        animation: openmenu .25s linear forwards;
         z-index: 100;
     }
     @keyframes openmenu {
         0%{
-            top: -10%;
+            top: -10px;
         } 100%{
-            top: 10%;
+            top: 1px;
         }
         
     }
@@ -105,8 +114,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 5px;
-        height: 30px;
+        width: 5%;
+        height: 60%;
         opacity: .8;
         border-radius: 8px;
         background-color: var(--secondary-color);
@@ -118,18 +127,16 @@
     .header_nav_wraper .close_wraper span:nth-child(2){
         transform:translatey(-50%) translateX(-50%) rotate(-45deg);
     }
-    .header_nav_wraper .nav_list{
-        display: flex;
+    .header_nav_container .header_nav_wraper .nav_list{
         flex-direction: column;
-        align-items: flex-start;
-        width: 200px;
-        grid-gap: 50px;
+        justify-content: center;
+        width: 100%;
         height: auto;
-        margin: 0 auto;
-        margin-top: 30px;
+        grid-column-gap: 0;
+        grid-row-gap: 40px;
     }
     .header_nav_container .header_nav_wraper .nav_list .list a{
-        font-size: 18px; 
+        font-size: 16px; 
     }
 
 }

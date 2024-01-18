@@ -9,7 +9,7 @@
     display: flex;
     width: 400%;
     height: 100%;
-    left: -00%;
+    left: 0;
 }
 .hero_slides .slide{
     position: relative;
@@ -47,35 +47,4 @@
     border: 1px solid gray;
     border-radius: 50%;
     cursor: pointer;
-}
-
-
-
-
-
-@keyframes heroslide {
-    0%{
-        left: 0;
-    }20%{
-        left: 0%;
-    } 25%{
-        left: 0%;
-    }30%{
-        left: -100%;
-    }50%{
-        left: -100%;
-    } 55%{
-        left: -100%;
-    } 60%{
-        left: -200%;
-    } 80%{
-        left: -200%;
-    } 85%{
-        left: -200%;
-    }90%{
-        left: -300%;
-    
-    } 100%{
-        left: -300%;
-    }
 }
