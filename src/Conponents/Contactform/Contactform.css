@@ -1,194 +1,70 @@
-input[type="text" i] {
-  padding-block: 0;
-  padding-inline: 0;
-}
-
-.contact_us{
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.contact_us form{
-    width: 80%;
-    height: 80%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.contact_us form .grid_wrap{
-     width: 90%;
-     height: 80%;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 90px);
-    grid-gap: 3%;
-}
-.contact_us form .grid_wrap > div{
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-.contact_us form .grid_wrap > div label,
-.contact_us form .grid_wrap > div input,
-.contact_us form .grid_wrap > div textarea{
-  font-family: var(--poppins-font);
-  font-size: 1.1rem;
-  color: var(--text-color);
- }
-.contact_us form .grid_wrap > div label{
-  text-transform: capitalize;
-   height: 30px;
-   padding-left: 2px;
-}
-.contact_us form .grid_wrap > div input{
-   height: 50px;
-   padding: 4px;
-   border: 0;
-   border-radius: 5px;
-   background-color: var(--fourth-color);
-  }
-  .contact_us form .grid_wrap > div input::placeholder,
-  .contact_us form .grid_wrap > div textarea::placeholder{
-    padding-left: 8px;
-    font-size: .9rem;
-   }
-   .contact_us form .grid_wrap > div input:focus,
-   .contact_us form .grid_wrap > div textarea:focus{
-     outline-color: var(--primary-color);
-   }
-  .contact_us form .grid_wrap > div textarea{
-    flex: 1;
-    padding: 4px;
-    border: 0;
-  }
-  .contact_us form .grid_wrap > div textarea::placeholder{
-    padding-top: 8px;
-  }
-.contact_us form .message{
-  grid-area: 3/ 1/ span 3 /span 2;
-}
-.contact_us form .form_btn{
-  height: 10%;
-  width: 90%;
-
-  display: flex;
-  justify-content: center;
-}
-.contact_us form .contact_button{
-    width: 100%;
-    height: 100%;
-    font-size: 1.1rem;
-    color: var(--fourth-color);
-    border: 0;
-    background-color: var(--secondary-color);
-}
-
-@media (min-width: 320px) and (max-width: 480.99px){
-  .contact_us{
-    align-items: center;
-}
-.contact_us form{
-  height: 92%;
-}
-.contact_us form .grid_wrap{
+#contactform{
+  width: 100%;
   height: 100%;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 45px 45px 45px 45px 120px;
-  grid-gap: 10px;
+  min-width: 320px;
+  padding:4px 0;
+  overflow: hidden;
 }
-.contact_us form .message{
-  grid-area: 5/ 1/ span 1 /span 1;
+#contactform .contactform_wraper{
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 30px;
+  width: 99%;
+  height: 99%;
+  margin: 0 auto;
 }
-.contact_us form .grid_wrap > div{
-  /* background-color: red; */
+#contactform .contactform_wraper > div{
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 15px;
+  height: auto;
+  width: auto;
 }
-.contact_us form .grid_wrap > div label,
-.contact_us form .grid_wrap > div input,
-.contact_us form .grid_wrap > div textarea{
-  font-size: .6rem;
- }
-.contact_us form .grid_wrap > div label{
-   height: 18px;
-   padding-left: 1px;
+#contactform .contactform_wraper > div label{
+  height: auto;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
-.contact_us form .grid_wrap > div input{
-   flex: 1;
-   padding: 2px;
-  }
-  .contact_us form .grid_wrap > div input::placeholder,
-  .contact_us form .grid_wrap > div textarea::placeholder{
-    padding-left: 2px;
-    font-size: .6rem;
-   }
-   .contact_us form .grid_wrap > div textarea::placeholder{
-    padding-top: 2px;
-   }
-   .contact_us form .grid_wrap > div textarea{
-    
-  }
-  .contact_us form .form_btn{
-    margin-top: 8px;
-    height: 30px;
-  }
-  .contact_us form .contact_button{
-    font-size: .8rem;
+#contactform .contactform_wraper >div input{
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  height: 50px;
+  padding: 0 8px;
+  background-color: #f7f7f7b0;
+  border: 1.5px solid  rgba(0, 0, 255, 0.5);
+  border-radius: 4px;
+  outline: none;
 }
-
+#contactform .contactform_wraper >div textarea{
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  padding: 5px 8px;
+  border: 1.5px solid rgba(0, 0, 255, 0.5);
+  border-radius: 4px;
+  outline: none;
+  -ms-overflow-style: none;
+  scroll-behavior: none;
 }
-/*low resolution tablets, mobiles (landscape)*/
-@media (min-width: 481px) and (max-width: 767.99px){
-  .contact_us{
-      align-items: center;
-  }
-  .contact_us form{
-    width: 90%;
-    height: 90%;
-  }
-  .contact_us form .grid_wrap{
-    height: 100%;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 45px);
-    grid-gap: 10px;
-  }
-  .contact_us form .message{
-    grid-area: 3/ 1/ span 3 /span 2;
-  }
-  .contact_us form .grid_wrap > div label,
-  .contact_us form .grid_wrap > div input,
-  .contact_us form .grid_wrap > div textarea{
-    font-size: .7rem;
-  }
-  .contact_us form .grid_wrap > div label{
-    height: 18px;
-    padding-left: 1px;
-  }
-  .contact_us form .grid_wrap > div input,
-  .contact_us form .grid_wrap > div textarea{
-    flex: 1;
-    padding: 2px;
-    }
-    .contact_us form .grid_wrap > div input::placeholder,
-    .contact_us form .grid_wrap > div textarea::placeholder{
-      padding-left: 2px;
-      font-size: .7rem;
-     }
-     .contact_us form .grid_wrap > div textarea::placeholder{
-      padding-top: 2px;
-     }
-     .contact_us form .form_btn{
-      margin-top: 10px;
-      height: 40px;
-    }
-    .contact_us form .contact_button{
-      font-size: .9rem;
-  }
-
+#contactform .contactform_wraper >div textarea::-webkit-scrollbar{
+  display: none;
+}
+#contactform .contactform_wraper >div .contact_button{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--secondary-color);
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  transition: all .25s ease;
+}
+#contactform .contactform_wraper >div .contact_button:active{
+  background-color: var(--primary-color);
 }

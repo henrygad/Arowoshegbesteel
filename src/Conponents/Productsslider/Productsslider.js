@@ -3,7 +3,7 @@ import navprivious from '../../Asset/slidernavleft.svg'
 import navnext from '../../Asset/slidernavright.svg'
 import {products_list} from '../../productslist'
 import { useRef } from 'react'
-import {Arrownavigation, Autoplayslider} from '../../slider/slider'
+import {Arrownavigation, Autoplayslider} from '../../slider/navigation'
 
 
 const Productsslider = ( {img1, img2, img3, index, transAnimation}) => {
@@ -56,7 +56,6 @@ function Clear(){
 products_list.forEach((ele, index) => {
  Autoplay(ele.transAnimation, index)
 })
-
 
 
 

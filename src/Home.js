@@ -5,6 +5,8 @@ import Sliderhero from './Conponents/Heroslider/Sliderhero'
 import Productsslider from './Conponents/Productsslider/Productsslider'
 import Projectsslider from './Conponents/Projectsslider/Projectsslider'
 import Testimonieslider from './Conponents/Testimonieslider/Testimonieslider'
+import Titlestroke from './Conponents/Titlestroke/Titlestroke'
+import Tickynav from './Conponents/Tickynav/Tickynav'
 
 
 import {AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
@@ -17,10 +19,10 @@ import  {MdDesignServices} from 'react-icons/md'
 import  {IoMdBuild} from 'react-icons/io'
 
 import logo from "./Asset/header/logo.svg"
-import Titlestroke from './Conponents/Titlestroke/Titlestroke'
 import aboutimage from './Asset/about/aboutusimg.jpg'
 import phoneicon from './Asset/about/phoneicon.svg'
 import arrowbtn from './Asset/buttonarrow.svg'
+import footerBgImg from './Asset/footer/industrialexractor3.jpg'
 
 
 /* services and project images */
@@ -54,6 +56,7 @@ import reviewImage2 from './Asset/testimonies/testimonialslogo2.jpg'
 import reviewImage3 from './Asset/testimonies/testimonialslogo3.jpg'
 import reviewImage4 from './Asset/testimonies/testimonialslogo4.jpg'
 import reviewStar from './Asset/testimonies/reviewstars.png'
+import Contactform from './Conponents/Contactform/Contactform'
 
 
 
@@ -61,8 +64,8 @@ import reviewStar from './Asset/testimonies/reviewstars.png'
 
 const Home = () => {
   return (
-    <div className='body_wraper'>
-      <header className='header'>
+    <>
+      <header className='header' id='js-home'>
         <div className='header_container_10vh'>
           <div className='grid_box_3areas grid_wrap'>
             <div className='header_social_icon'>
@@ -72,7 +75,7 @@ const Home = () => {
               <a href='https://facebook.com'><AiFillLinkedin color='var( --primary-color)' size="20px" /></a>
             </div>
             <div className='header_logo'>
-              <img src={logo} alt="Arowoshegbe logo" onClick={ e => window.location.href = 'https://arowoshegbesteel.com/'} />
+              <a href='/' role='button'><img src={logo} alt="Arowoshegbe logo"/></a>
             </div>
             <div className='header_nav'>
               <Nav />
@@ -80,11 +83,11 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <main>
-        <section className='hero_container_90vh hero'>
+      <main  className='home_main'>
+        <section className='hero_container_90vh hero' id='js-hero'>
           <Sliderhero />
         </section>
-        <section className='container_2clm about_section'>
+        <section className='container_2clm about_section' id='js-about-us'>
           <div className='about_title'><Titlestroke text={"About Us"} color={"var(--primary-color)"}/></div>
           <div className='flex_box_2d  about_content'>
             <div className='text'>
@@ -108,7 +111,7 @@ const Home = () => {
             <div className='image'><img src={aboutimage} alt=''/></div>
           </div>
         </section>
-        <section className='container_2clm products_section'>
+        <section className='container_2clm products_section' id='js-services'>
           <div className='products_title'><Titlestroke text={'Our Services'} color={'#fff'} /></div>
           <div className='product_content'>
             <div className='grid_box_4clm products_grid'>
@@ -128,8 +131,22 @@ const Home = () => {
         </section>
         <section className=' container_2clm whychooseus_container'>
           <div className='title'><Titlestroke text={'Why Choose Us'} color={'var(--primary-color)'} /></div>
-          <div className='flex_box_3d whychooseus_flexbox'>
-            <div className='one'>
+          <div className='flex_box_3d whychooseus_flexbox' >
+            <div className='one js-chooseusebox-one' onMouseOver={e=> {
+                const chooseUsBoxOne_el = document.querySelector('.js-chooseusebox-one')
+                chooseUsBoxOne_el.style.backgroundColor = '#f3efef'
+
+                const chooseUseBoxTwo_el = document.querySelector('.js-chooseusebox-two')
+                chooseUseBoxTwo_el.style.backgroundColor = '#fff'
+              }
+              } onMouseOut={e=> {
+                  const chooseUsBoxOne_el = document.querySelector('.js-chooseusebox-one')
+                  chooseUsBoxOne_el.style.backgroundColor = '#fff'
+
+                  const chooseUsBoxTwo_el = document.querySelector('.js-chooseusebox-two')
+                  chooseUsBoxTwo_el.style.backgroundColor = '#f3efef'
+                }
+              }>
               <div className='img'><FaAward color='var( --primary-color)' size={'50px'} /></div>
               <div className='title'><h3>Experience</h3></div>
               <div className='text'><p> We've been active since 1993.  
@@ -137,7 +154,7 @@ const Home = () => {
                 establishments within and outside Nigeria. with over 200 done projects, we guarantee 
                 that will give you the best.</p></div>
             </div>
-            <div className='two'>
+            <div className='two js-chooseusebox-two'>
               <div className='img'><MdWorkHistory color='var( --primary-color)' size={'50px'} /></div>
               <div className='title'><h3>Expertise</h3></div>
               <div className='text'><p>Our top priority at Arowoshegbe Steel Construction is expertise. 
@@ -145,7 +162,21 @@ const Home = () => {
                We assign the best workers to each project, from design and manufacturing through installation, 
                plant modification, maintenance, down to service and consultancy.</p></div>
             </div>
-            <div className='three'>
+            <div className='three js-chooseusebox-three' onMouseOver={e=> {
+                const chooseUsBoxThree_el = document.querySelector('.js-chooseusebox-three')
+                chooseUsBoxThree_el.style.backgroundColor = '#f3efef'
+
+                const chooseUseBoxTwo_el = document.querySelector('.js-chooseusebox-two')
+                chooseUseBoxTwo_el.style.backgroundColor = '#fff'
+              }
+              } onMouseOut={e=> {
+                  const chooseUsBoxThree_el = document.querySelector('.js-chooseusebox-three')
+                  chooseUsBoxThree_el.style.backgroundColor = '#fff'
+                  
+                  const chooseUsBoxTwo_el = document.querySelector('.js-chooseusebox-two')
+                  chooseUsBoxTwo_el.style.backgroundColor = '#f3efef'
+                }
+              }>
               <div className='img'><GiTeamIdea color='var( --primary-color)' size={'50px'} /></div>
               <div className='title'><h3>Quality</h3></div>
               <div className='text'><p> Quality is our goal at Arowoshegbe Steel Construction. 
@@ -154,7 +185,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='container_2clm featureprojects_container'>
+        <section className='container_2clm featureprojects_container' id='js-myprojects'>
           <div className='title'><Titlestroke text={'Feature Projects'} color={'var(--primary-color)'}/></div>
           <div className='container_2clm projects_sliders'>
             <div className='slider one'>
@@ -177,46 +208,82 @@ const Home = () => {
             <Testimonieslider img1={reviewImage1} img2={reviewImage2} img3={reviewImage3} img4={reviewImage4} reviewStar={reviewStar} />
           </div>
         </section>
-        <section className='container_2clm contactus_container'>
+        <section className='container_2clm contactus_container' id='js-contact-us'>
           <div className='title'><Titlestroke text={'Reach Us'} color={'var(--primary-color)'} /></div>
           <div className='container_2clm contactus_content'>
             <div className='container_2clm ideaprocess-container'>
               <div className='flex_box_4d flex_boxs'>
                 <div className='flex_box one'>
-                  <div className='img_div'>< FaHandshake color='var(--secondary-color)' size='40px' /></div>
+                  <div>< FaHandshake color='var(--secondary-color)' size='40px' /></div>
                   <div><h3>we meet</h3></div>
                   <div><p>Our team of experts is prepared to learn about your requirements and present you with our finest offerings.</p></div>
                 </div>
                 <div className='flex_box two'>
-                  <div className='img_div'>< FcIdea color='var(--secondary-color)' size='40px' /></div>
-                  <h3>we brainstorm</h3>
+                  <div>< FcIdea color='var(--secondary-color)' size='40px' /></div>
+                  <div><h3>we brainstorm</h3></div>
                   <div><p>Our professionals then map out the best course of action for your engineering needs.</p></div>
                 </div>
                 <div className='flex_box three'>
-                  <div className='img_div'>< MdDesignServices color='var(--secondary-color)' size='40px' /></div>
+                  <div>< MdDesignServices color='var(--secondary-color)' size='40px' /></div>
                   <div><h3>we design</h3></div>
                   <div><p>After that, we show you a variety of designs that are customized to meet your requirements..</p></div>
                 </div>
                 <div className='flex_box four'>
-                  <div className='img_div'><IoMdBuild color='var(--secondary-color)' size='40px'/></div>
+                  <div><IoMdBuild color='var(--secondary-color)' size='40px'/></div>
                   <div><h3>we install</h3></div>
                   <div><p>Following our assessment of the project and creation of a design system that meets your needs, we construct and install.</p></div>
                 </div>
               </div>
               <div className='ctanavigation'>
-                <div><h3>Make an appiontment today!</h3></div>
-                <div><a href='#contact-me'>get free consultation <img src={arrowbtn} alt='' /></a></div>
+                <div><h3>Make an Appiontment Today</h3></div>
+                <div><p>Get Started with Free Consultation now<span>!</span></p></div>
+                <div><img src={arrowbtn} alt='' /></div>
               </div>
             </div>
-            <div className='contactusform_container'></div>
+            <div className='contactusform_container'>
+              <Contactform />
+            </div>
           </div>
         </section>
       </main>
-      <footer></footer>
-    </div>
+      <footer>
+        <section className='container_2clm footer_container'>
+          <div className='flex_box_3d footer_content' style={{
+           backgroundImage: `url(${footerBgImg})`,
+        }} >
+            <div className='footer_infor'>
+              <div className='footer_logo'><img src={logo} alt='footer logo' /></div>
+              <div className='content'><p>Arowoshegbesteel is a leading expert in industry installations, steel fabrication, and ventilation system design and installations.</p></div>
+            </div>
+            <div className='footer_contact'>
+              <div className='title'><h3>Contact</h3></div>
+              <div className='content'>
+                <p>59, Morrision Christain, Opp, Morrision Christain Company, <br />Alausa B/Stop Aluasa Ikeja, Lagos.</p>
+                <p> 08135805321, 090559114437 <br /> 09055434441</p>
+                <p>arowosegbesteelconstructions@gmail.com <br/> yinka4real01@gmail.com </p></div>
+            </div>
+            <div className='footer_socials'>
+              <div className='title'><h3>Find us here</h3></div>
+              <div className='content'>
+                <AiFillFacebook color='var(--primary-color)' size={'30px'} />
+                <AiFillTwitterSquare color='var(--primary-color)' size={'30px'} />
+                <AiFillInstagram  color='var(--primary-color)' size={'30px'}/>
+                <AiFillLinkedin color='var(--primary-color)' size={'30px'}/>
+               </div>
+            </div>
+          </div>
+          <div className='footer_copyright'>
+            <div><p>&copy; 2023 AROWOSHEGBE STEEL CONSTRUCTION | All Right Reserved</p></div>
+          </div>
+        </section>
+        <div className='tickynav_container' style={{width: '100%', height: 'auto',}}>
+          <Tickynav />
+        </div>
+      </footer>
+    </>
   )
 }
 
-export default Home
+export default Home;
 
 

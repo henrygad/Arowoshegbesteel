@@ -1,5 +1,5 @@
 import './Sliderhero.css'
-import { Autoplayslider, Dotnavavigation} from '../../slider/slider'
+import { Autoplayslider, Dotnavavigation} from '../../slider/navigation'
 import { useRef } from 'react'
 
 import Heroslide1 from './Heroslide1/Heroslide1'
@@ -67,11 +67,4 @@ function Clear(){
 
 
 Autoplay()
-
-
-
-
-
-
-
 export default Sliderheader;

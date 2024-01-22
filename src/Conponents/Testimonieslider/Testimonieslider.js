@@ -1,6 +1,6 @@
 import './Testimonieslider.css'
 import { useRef } from 'react'
-import {Arrownavigation} from '../../slider/slider'
+import {Arrownavigation} from '../../slider/navigation'
 
 import navPrevious from '../../Asset/slidernavleft.svg'
 import navNext from "../../Asset/slidernavright.svg"

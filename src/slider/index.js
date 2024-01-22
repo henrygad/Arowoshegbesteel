@@ -1,4 +1,13 @@
 /*** 
+ * Plese not that this file, slider js and function is a has the basic functionality of a  slider but dynamic.
+ * Users of this js slider libary has the permision to add, adjust, reset, recode the file to suit thier slider.
+ * Feature js file homes advance designs you can addd to our slides (note that this file can be edited to add more slide features)
+ * Movesslide js file homes the movement of the slides in the value of percent to the left peoperty of the slide (note this file can be edited to suit the number of slide in your slider and per it distance coverd)
+ * Navigation js file homes the basic slider navigation (note that this file can be edited to suit your slider navigations)
+ * 
+ * 
+ * //NOTE
+ * 
  * slidesEL = the slides element
  * numberOfSlides =  the number of slides avialiable
  * moves = the number of move you want you slides to move at each point (this must be in % value)

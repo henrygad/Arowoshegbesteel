@@ -5,7 +5,7 @@ import './Contactform.css'
 
 
 export const Contactform = () => {
-  const form = useRef();
+  const form = useRef(null);
   
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -20,10 +20,8 @@ export const Contactform = () => {
         emailjs.sendForm('service_dyloeel', 'template_svrchpo', form.current, 'ltNawjgy3CqCTwVXe')
         .then((result) => {
           alert("message send.", result.text)
-            //console.log(result.text);
         }, (error) => {
             alert(error.text)
-            //console.log(error.text);
         });
        }else{
         alert('boxes empty')
@@ -39,9 +37,8 @@ export const Contactform = () => {
   };
 
   return (
-    <div className='contact_us'>
-      <form ref={form} onSubmit={sendEmail} id='contactform'  >
-        <div className='grid_wrap'>
+      <form ref={form} onSubmit={sendEmail} id='contactform'>
+        <div className='contactform_wraper'>
           <div className='name'>
             <label htmlFor='name'>name</label>
             <input type='text' id='name' placeholder='John mark' name="from_name"  value={name} onInput={ e =>  setName(e.target.value)} />
@@ -51,7 +48,7 @@ export const Contactform = () => {
             <input type='email' id='email' placeholder='johnmark@gmail.com' name="from_email" value={email}  onInput={ e => setEmail(e.target.value)}/>
           </div>
           <div className='phone'>
-            <label htmlFor='phone'>phone</label>
+            <label htmlFor='phone'>phone (optional)</label>
             <input type='phone' id='phone' placeholder='+234 7025672168' name="from_phone" value={phone}  onInput={ e => setPhone(e.target.value)} />
           </div>
           <div className='service'>
@@ -59,15 +56,14 @@ export const Contactform = () => {
             <input type='text' id='service' placeholder='Domistic ventilation installation'name="from_service"value={service}  onInput={ e => setService(e.target.value)} />
           </div>
           <div className='message'>
-            <label htmlFor='message'>message us</label>
+            <label htmlFor='message'>message</label>
             <textarea type='text' id='message' placeholder='How can we help you?' name="message" value={message}  onInput={ e => setMessage(e.target.value)} />
           </div>
-        </div>
-        <div className='form_btn'>
-          <input className='contact_button' type="submit" value="Send" />
+          <div className='button'>
+            <input className='contact_button' type="submit" value="Send" />
+          </div>
         </div>
       </form>
-    </div>
   );
 };
 

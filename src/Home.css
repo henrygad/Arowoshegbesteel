@@ -1,3 +1,7 @@
+#root{
+   position: relative;
+}
+/* start of the header area design */
 .header{
 }
 .header_social_icon{
@@ -25,14 +29,20 @@
     min-height: 20px;
     padding-right: 10px;
 }
-/* end of header design */
+/* end of header area design */
+
+
+
+/* 
+start of the main area design */
+.home_main{
+}
+/* end of the main area design */
 
 
 /* 
 start of hero design */
 .hero{
-   
-
 }
 /* end of hero section deign */
 
@@ -92,15 +102,19 @@ start of hero design */
     display: flex;
     justify-content: center;
   }
-
   .about_content .image img{
      height: 400px;
      width: 400px;
      border: 0;
      border-radius: 20px;
-     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .8));
+     box-shadow: -1px 1px 1px rgba(0, 0, 0, .8);
+     filter: brightness(100%);
      object-fit: cover;
+     transition: all .5s ease-in-out;
   }
+  .about_content .image img:hover{
+      filter: brightness(50%);
+   }
 /* end of about us section design */
 
 
@@ -184,6 +198,10 @@ start of the why choose us section design
 .whychooseus_container .whychooseus_flexbox > div{
     padding: 20px;
     text-align: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    transition: all .5s ease-in-out;
 }
 .whychooseus_container .whychooseus_flexbox .two{
     background-color: #f3efef;
@@ -263,37 +281,230 @@ start of the why choose us section design
     width: auto;
     height: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-color: #fff;
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
 
  }
  .contactus_content .ideaprocess-container .flex_boxs{
     grid-gap: 20px;
-    padding: 1% 4%;
+    justify-content: center;
+    padding:0 4%;
  }
  .contactus_content .ideaprocess-container .flex_boxs .flex_box{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
     width: auto;
     height: auto;
-    min-width: 300px;
+    min-width: 240px;
+    max-width: 400px;
     padding: 10px 15px;
     background-color: #f3efefab;
-    filter: drop-shadow(2px -2px 4px rgba(0, 130, 197, .1));
+    filter: drop-shadow(0px 10px 4px rgba(0, 130, 197, .1));
     border: 0;
     border-radius: 2px;
+    transition: all 1s ease-in-out;
+ }
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box:hover{
+   
+   filter: drop-shadow(0px 0px 0px rgba(0, 130, 197, .1));
+}
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box div:nth-child(1){
+   background-color: #fff;
+   width: 45px;
+   height: 45px;
+   padding: 2px;
+   border: 0;
+   border-radius: 50%;
+   filter: drop-shadow( 2px 2px 2px rgba(0, 0 , 0 , .1));
+ }
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box div:nth-child(2){}
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box div:nth-child(3){}
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box div h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+ }
+ .contactus_content .ideaprocess-container .flex_boxs .flex_box div p{
+    font-size: 16px;
+ }
+ .contactus_content .ideaprocess-container .ctanavigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 5px;
+    margin-top: 100px;
+ }
+ .contactus_content .ideaprocess-container .ctanavigation  div:nth-child(1){}
+ .contactus_content .ideaprocess-container .ctanavigation  div:nth-child(2){}
+ .contactus_content .ideaprocess-container .ctanavigation  div:nth-child(3){
+    height: 40px;
+    width: 90px;
+    margin-top: 50px;
+ }
+ .contactus_content .ideaprocess-container .ctanavigation h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: #333;
+    max-width: 300px;
+ }
+ .contactus_content .ideaprocess-container .ctanavigation p{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 320px;
+ }
+ .contactus_content .ideaprocess-container .ctanavigation p span{
+    color: var( --secondary-color);
+ }
+ .contactus_content .ideaprocess-container .ctanavigation  div:nth-child(3) img{
+   position: relative;
+   top: 0;
+    display: block;
+    width: 70%;
+    height: 70%;
+    transform-origin: center;
+    transform: rotate(90deg);
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 2px;
+    margin: 0 auto;
+    opacity: 1;
+    animation: ctaBtn 3s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%)
+    infinite;
+    cursor: pointer;
  }
 
- 
- /*  */
+ @keyframes ctaBtn {
+   0%{
+      background-color: var(--secondary-color);
+      top: 0;
+      opacity: 1;
+   }25%{
+      background-color: var(--primary-color);
+      opacity: .9;
+   }50%{
+      background-color: var(--secondary-color);
+      opacity: .8;
+   }75%{
+      background-color: var(--primary-color);
+      opacity: .7;
+   }100%{
+      background-color: var(--primary-color);
+      top: 20%;
+      opacity: 1;
+   }
+   
+ }
+ /* contact form */
  .contactus_content .contactusform_container{
-    width: auto;
-    height: auto;
+   display: grid;
+    width: 100%;
+    height: 100%;
     min-width: 320px;
-    max-height: 420px;
-    padding-top: 50px;
-    background-color: #f3efef;
+    max-width: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
  }
+/* end of contact form section design */
 
+
+/* 
+start of the footer area design */
+.footer_container{
+   position: relative;
+   padding-left: 0;
+   padding-right: 0;
+}
+.footer_container .footer_content{
+   position: relative;
+   grid-gap: 40px;
+   justify-content: center;
+   padding-left:5%;
+   padding-right: 5%;
+   padding-top: 100px;
+   padding-bottom: 80px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.footer_container .footer_content::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0 , 0 , .7);
+   z-index: 0;
+}
+.footer_container .footer_content > div{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   grid-row-gap: 30px;
+   padding: 10px;
+   width: auto;
+   height: auto;
+   min-width: 200px;
+   max-width: 420px;
+   z-index: 1;
+}
+.footer_container .footer_content > div h3{
+   font-size: 18px;
+   font-weight: 700;
+   color: #fff;
+   letter-spacing: 2px;
+}
+.footer_container .footer_content .footer_infor .footer_logo  img{
+   height: 40px;
+   object-fit: cover;
+}
+.footer_container .footer_content .footer_infor .content p{
+   max-width: 300px;
+   color: #f3f3f3;
+}
+.footer_container .footer_content .footer_contact .content{
+   display: flex;
+   flex-direction: column;
+   grid-row-gap: 15px;
+}
+.footer_container .footer_content .footer_contact .content p{
+   font-size: 14px;
+   color: #f3f3f3;
+}
+.footer_container .footer_content .footer_socials{
+   align-items: center;
+}
+.footer_container .footer_content .footer_socials .content{
+   display: flex;
+   grid-gap: 5px;
+   padding-left: 10px;
+}
+.footer_container .footer_copyright{
+   width: 100%;
+   height: auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #fff;
+}
+.footer_container .footer_copyright >div{
+   height: auto;
+   width: auto;
+}
+.footer_container .footer_copyright >div p{
+   text-align: center;
+   font-size: 12px;
+   font-weight: 500;
+}
+/* end of the footer area design */
 
 
 @media (min-width: 481px) and (max-width: 767.99px){
@@ -328,9 +539,48 @@ start of the why choose us section design
         height: px;
      }
     /* end of client reviews section design */
+
+
+    /* 
+    start of contact us section design */
+    .contactus_content .ideaprocess-container .ctanavigation h3{
+        font-size: 25px;
+        line-height: 40px;
+     }
+     .contactus_content .ideaprocess-container .ctanavigation p{
+        font-size: 16px;
+        max-width: 300px;
+     }
+    /* end of contact us section desin */
+
+    /*start of footer section design */
+    
+      /* end of footer section design */
+
 }
 
+
 @media (min-width: 320px) and (max-width: 480px){
+
+   /*
+   start of the header area design */
+   .header{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(0, 0 , 0 , .1);
+      padding-bottom: 2px;
+   }
+   /* end of the header area deign */
+
+   /* 
+   start of the main area design */
+   .home_main{
+      margin-top: 95px;
+   }
+
     /* 
     start of about us  section design  */
     .about_content .image img{
@@ -369,6 +619,26 @@ start of the why choose us section design
         height: px;
      }
     /* end of client reviews section design */
+
+
+
+     /* 
+    start of contact us section design */
+    .contactus_content .ideaprocess-container .ctanavigation h3{
+        font-size: 22px;
+        line-height: 35px;
+     }
+     .contactus_content .ideaprocess-container .ctanavigation p{
+        font-size: 15px;
+        max-width: 200px;
+     }
+    /* end of contact us section desin */
+
+
+    
+    /*start of footer section design */
+    
+   /* end of footer section design */
     
    
 }

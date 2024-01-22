@@ -1,4 +1,4 @@
-import { Autoplayslider } from '../../slider/slider'
+import { Autoplayslider } from '../../slider/navigation'
 import './Projectsslider.css'
 
 

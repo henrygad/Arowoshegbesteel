@@ -1,0 +1,35 @@
+.tickynav{
+    position: fixed;
+    bottom: 10%;
+    right: 1.5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 70px;
+    padding: 6px;
+    transform-origin: center;
+    transform: rotate(90deg);
+    border: 0;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.45);
+    filter: drop-shadow(0px 1px 1px rgba(5, 30, 128, 0.2));
+    opacity: 0;
+    transition: all 3s ease-out;
+    z-index: 50;
+    cursor: pointer;
+}
+.tickynav img{
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-180deg);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .tickynav{
+        height: 30px;
+        width: 60px;
+        padding: 5px;
+    }
+
+}
