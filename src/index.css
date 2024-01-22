@@ -1,3 +1,39 @@
+/* start of usefull selector names 
+
+// containers
+    header_container_10vh
+    header_container_auto
+    hero_container_90vh
+    hero_container_100vh
+    hero_container_auto
+    container
+    container_2clm
+
+
+//flex boxs
+    flex_box_2d,
+    flex_box_3d,
+    flex_box_4d,
+    flex_box_5d
+
+
+//grid boxs
+    grid_box_3areas,
+    grid_box_4clm,
+    grid_box_5clm,
+    grid_box_6clm,
+    grid_box_7clm,
+    grid_box_8clm,
+    grid_box_9clm,
+    grid_box_10clm
+
+*/
+
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Google+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Volkhov:wght@400;700&display=swap");
 @import url('./container.css');
