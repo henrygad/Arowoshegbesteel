@@ -1,0 +1,63 @@
+
+.header_container_10vh{
+    /* a header container with an initial height of 10vh */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
+}
+.header_container_auto{
+   /* an auto header container with an initial height of 100px */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+.hero_container_90vh{
+    /* a hero container with an initial height of 90vh */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 90vh;
+}
+.hero_container_100vh{
+    /* a hero container with an initial height of 100vh */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+.hero_container_auto{
+    /* a flexible hero container with an initial height of 100px */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+.container{
+    /*  a single container with an initial of height 100px*/
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 25px 0;
+}
+.container_2clm{
+    /* container with two conlumn and with an total initial of 100px */
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 25px 0;
+}
+.container_2clm > div{
+    /* children of container with two conlumn and with an initail height of 100px  are equal in width*/
+    flex: 1 0 100%;
+    height: auto;
+}

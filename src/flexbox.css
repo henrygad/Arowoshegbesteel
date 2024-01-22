@@ -1,0 +1,84 @@
+.flex_box_2d,
+.flex_box_3d,
+.flex_box_4d,
+.flex_box_5d{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.flex_box_2d > div,
+.flex_box_3d > div,
+.flex_box_4d > div,
+.flex_box_5d > div{
+    flex: 1 0;
+    height: auto;
+}
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px){}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280.9px){} 
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024.9px){
+    .flex_box_3d > div:nth-child(1),
+    .flex_box_3d > div:nth-child(2),
+    .flex_box_3d > div:nth-child(3),
+    .flex_box_4d > div:nth-child(1),
+    .flex_box_4d > div:nth-child(2),
+    .flex_box_4d > div:nth-child(3),
+    .flex_box_5d > div:nth-child(1),
+    .flex_box_5d > div:nth-child(2)
+    .flex_box_5d > div:nth-child(3){
+        min-width: 240px;
+    }
+
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024.9px) and (orientation: landscape){
+    .flex_box_3d > div:nth-child(1),
+    .flex_box_3d > div:nth-child(2),
+    .flex_box_3d > div:nth-child(3),
+    .flex_box_4d > div:nth-child(1),
+    .flex_box_4d > div:nth-child(2),
+    .flex_box_4d > div:nth-child(3),
+    .flex_box_5d > div:nth-child(1),
+    .flex_box_5d > div:nth-child(2)
+    .flex_box_5d > div:nth-child(3){
+        min-width: 240px;
+    }
+
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767.9px){
+    .flex_box_2d > div:nth-child(1),
+    .flex_box_2d > div:nth-child(2),
+    .flex_box_3d > div:nth-child(1),
+    .flex_box_3d > div:nth-child(2),
+    .flex_box_4d > div:nth-child(1),
+    .flex_box_4d > div:nth-child(2),
+    .flex_box_5d > div:nth-child(1),
+    .flex_box_5d > div:nth-child(2){
+        min-width: 231px;
+    }
+
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 0px) and (max-width: 480.9px){
+    .flex_box_2d > div:nth-child(1),
+    .flex_box_2d > div:nth-child(2),
+    .flex_box_3d > div:nth-child(1),
+    .flex_box_3d > div:nth-child(2),
+    .flex_box_4d > div:nth-child(1),
+    .flex_box_4d > div:nth-child(2),
+    .flex_box_5d > div:nth-child(1),
+    .flex_box_5d > div:nth-child(2){
+        min-width: 240px;
+    }
+}
