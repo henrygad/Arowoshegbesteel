@@ -1,4 +1,3 @@
-import './responsivelayout/index.css'
 import Home from './Home'
 import Scrollingnavup from './hooks/Scrollingnavcontrol'
 
