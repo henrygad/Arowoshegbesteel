@@ -33,7 +33,7 @@
     .flex_box_5d > div:nth-child(1),
     .flex_box_5d > div:nth-child(2)
     .flex_box_5d > div:nth-child(3){
-        min-width: 240px;
+        min-width: auto;
     }
 
 }
@@ -49,7 +49,7 @@
     .flex_box_5d > div:nth-child(1),
     .flex_box_5d > div:nth-child(2)
     .flex_box_5d > div:nth-child(3){
-        min-width: 240px;
+        min-width: auto;
     }
 
 }
@@ -64,7 +64,7 @@
     .flex_box_4d > div:nth-child(2),
     .flex_box_5d > div:nth-child(1),
     .flex_box_5d > div:nth-child(2){
-        min-width: 231px;
+        min-width: 240.5px;
     }
 
 }
@@ -79,6 +79,6 @@
     .flex_box_4d > div:nth-child(2),
     .flex_box_5d > div:nth-child(1),
     .flex_box_5d > div:nth-child(2){
-        min-width: 240px;
+        min-width: 240.5px;
     }
 }

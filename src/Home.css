@@ -4,8 +4,12 @@
 /* start of the header area design */
 .header{
 }
+.header_grid_wrap{
+   background-color: #fff;
+   padding-top: 8px;
+}
 .header_social_icon{
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -17,12 +21,11 @@
 }
 .header_logo{
     height: auto;
-    min-height: 20px;
     padding-left: 10px;
 }
 .header_logo img{
     height: 40px;
-    width: 200px;
+    object-fit: cover;
 }
 .header_nav{
     height: auto;
@@ -59,20 +62,19 @@ start of hero design */
     padding-bottom: 50px;
 }
 .about_content{
-    padding-left: 10px;
-    padding-right: 10px;
-    grid-gap: 20px;
+    grid-gap: 10px;
+}
+.about_content > div{
+   display: flex;
 }
 .about_content .text {
-    display: flex;
     justify-content: flex-end;
 }
 .about_content .text .text_wrap{
     width: auto;
     height: auto;
-    min-width: 240px;
     max-width: 500px;
-    padding-bottom: 50px;
+    padding: 20px;
 }
 .about_content .text .text_wrap > p{
     font-size: 16px;
@@ -99,15 +101,14 @@ start of hero design */
     font-weight: 900;
   }
   .about_content .image{
-    display: flex;
     justify-content: center;
   }
   .about_content .image img{
      height: 400px;
-     width: 400px;
+     width: auto;
      border: 0;
      border-radius: 20px;
-     box-shadow: -1px 1px 1px rgba(0, 0, 0, .8);
+     box-shadow: -0.5px 1px 1px rgba(0, 0, 0, .4);
      filter: brightness(100%);
      object-fit: cover;
      transition: all .5s ease-in-out;
@@ -167,6 +168,7 @@ start of products section */
 .product_content .product_title h3{
     font-size: 22px;
     font-weight: 600;
+    letter-spacing: 1px;
     color: hsla(0, 0%, 92%, 1);
 }
 .product_content .product_btn{
@@ -513,11 +515,14 @@ start of the footer area design */
     .header_social_icon{
         grid-gap: 6px;
     }
+    /* end of header section design*/
+
+    /* start of about us section design */
     .about_content .image img{
-        height: 350px;
-        width: 350px;
+      height: 340px;
      }
-     /* end of header section design*/
+ 
+     /* end of about us section design */
 
 
      /* 
@@ -580,15 +585,15 @@ start of the footer area design */
    .home_main{
       margin-top: 95px;
    }
+   
 
     /* 
     start of about us  section design  */
     .about_content .image img{
-        height: 300px;
-        width: 300px;
+      height: 340px;
      }
+    
      /* end of about us  section design */
-
 
 
      /* 

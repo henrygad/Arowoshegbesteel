@@ -67,7 +67,7 @@ const Home = () => {
     <>
       <header className='header' id='js-home'>
         <div className='header_container_10vh'>
-          <div className='grid_box_3areas grid_wrap'>
+          <div className='grid_box_3areas header_grid_wrap'>
             <div className='header_social_icon'>
               <a href='https://facebook.com'><AiFillFacebook color='var( --primary-color)' size="20px" /></a>
               <a href='https://facebook.com'><AiFillTwitterSquare color='var( --primary-color)' size="20px" /></a>

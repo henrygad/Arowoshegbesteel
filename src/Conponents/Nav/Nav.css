@@ -21,10 +21,8 @@
     justify-content: flex-end;
     align-items: center;
     grid-column-gap: 25px;
-
 }
 .header_nav_container .header_nav_wraper .nav_list .list{
-    flex-shrink: 0;
     list-style: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -41,6 +39,12 @@
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767.99px){
+    .header_nav_container .header_nav_wraper .nav_list{
+        grid-column-gap: 10px;
+    }
+    .header_nav_container .header_nav_wraper .nav_list .list{
+        font-size: 13px;
+    } 
     
 }
 
