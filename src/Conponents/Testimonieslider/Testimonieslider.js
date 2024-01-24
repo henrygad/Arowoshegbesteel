@@ -15,7 +15,7 @@ const Testimonieslider = ( {img1, img2, img3, img4, reviewStar}) => {
     const slidesEl = useSlide.current
     const numberOfSlides = 4
     const moves = 100
-    const transAnimation ='all 2s ease-in-out'
+    const transAnimation ='all 1s linear'
 
     Arrownavigation(slidesEl, numberOfSlides, moves, transAnimation, value, false, false)
   }
@@ -40,7 +40,7 @@ const Testimonieslider = ( {img1, img2, img3, img4, reviewStar}) => {
           <div className='slide_wrap'>
                 <img src={reviewStar}  alt='review star'/>      
                 <img  src={img2} alt=''/>
-                <h3>5 Stor Technical Services</h3>
+                <h3>5 Star Technical Services</h3>
                 <p>
                   "I would like to formally and sincerely express my gratitude for the amazing work you accomplished for us @Arowoshegbesteelconstruction   You are highly worthy and trusted."
                 </p>

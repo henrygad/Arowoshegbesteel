@@ -53,7 +53,7 @@ function Autoplay1() {
     const slidesEl = document.querySelector('.js-projects-slides1')
     const moves = 30
     const numberOfSlides = 11
-    const transAnimation = 'all 8s linear 1s'
+    const transAnimation = 'all 8s linear'
     const slideRight = 'right'
 
     Autoplayslider(slidesEl, numberOfSlides, moves, transAnimation, slideRight)
