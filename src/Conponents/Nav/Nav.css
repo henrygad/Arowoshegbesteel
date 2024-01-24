@@ -25,7 +25,6 @@
 .header_nav_container .header_nav_wraper .nav_list .list{
     list-style: none;
     text-transform: uppercase;
-    font-size: 14px;
     font-weight: 700;
     color: var(--primary-color);
     transition: all .5s ease;
@@ -43,7 +42,7 @@
         grid-column-gap: 10px;
     }
     .header_nav_container .header_nav_wraper .nav_list .list{
-        font-size: 13px;
+        font-size: 14px;
     } 
     
 }
@@ -136,7 +135,6 @@
         grid-row-gap: 40px;
     }
     .header_nav_container .header_nav_wraper .nav_list .list{
-        font-size: 16px; 
     }
 
 }

@@ -84,7 +84,6 @@ start of hero design */
     padding: 20px;
 }
 .about_content .text .text_wrap > p{
-    font-size: 16px;
     line-height: 23px;
   }
   .about_content .text .text_wrap p span{
@@ -173,7 +172,6 @@ start of products section */
     z-index: 20;
 }
 .product_content .product_title h3{
-    font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
     color: hsla(0, 0%, 92%, 1);
@@ -222,7 +220,6 @@ start of the why choose us section design
     padding: 25px 0;  
 }
 .whychooseus_container .whychooseus_flexbox > div .title h3{
-   font-size: 20px;
    font-weight: bold;
 }
 .whychooseus_container .whychooseus_flexbox > div .text{
@@ -331,13 +328,11 @@ start of the why choose us section design
  .contactus_content .ideaprocess-container .flex_boxs .flex_box div:nth-child(2){}
  .contactus_content .ideaprocess-container .flex_boxs .flex_box div:nth-child(3){}
  .contactus_content .ideaprocess-container .flex_boxs .flex_box div h3{
-    font-size: 20px;
     font-weight: 500;
     color: var(--primary-color);
     text-transform: capitalize;
  }
  .contactus_content .ideaprocess-container .flex_boxs .flex_box div p{
-    font-size: 16px;
  }
  .contactus_content .ideaprocess-container .ctanavigation{
     display: flex;
@@ -355,7 +350,6 @@ start of the why choose us section design
  }
  .contactus_content .ideaprocess-container .ctanavigation h3{
     text-align: center;
-    font-size: 30px;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 3px;
@@ -365,7 +359,6 @@ start of the why choose us section design
  .contactus_content .ideaprocess-container .ctanavigation p{
     text-align: center;
     color: var(--primary-color);
-    font-size: 18px;
     font-weight: 500;
     max-width: 320px;
  }
@@ -467,7 +460,6 @@ start of the footer area design */
    z-index: 1;
 }
 .footer_container .footer_content > div h3{
-   font-size: 18px;
    font-weight: 700;
    color: #fff;
    letter-spacing: 2px;
@@ -486,7 +478,6 @@ start of the footer area design */
    grid-row-gap: 15px;
 }
 .footer_container .footer_content .footer_contact .content p{
-   font-size: 14px;
    color: #f3f3f3;
 }
 .footer_container .footer_content .footer_socials{
@@ -556,11 +547,9 @@ start of the footer area design */
     /* 
     start of contact us section design */
     .contactus_content .ideaprocess-container .ctanavigation h3{
-        font-size: 25px;
         line-height: 40px;
      }
      .contactus_content .ideaprocess-container .ctanavigation p{
-        font-size: 16px;
         max-width: 300px;
      }
     /* end of contact us section desin */
@@ -616,11 +605,9 @@ start of the footer area design */
      /* 
     start of contact us section design */
     .contactus_content .ideaprocess-container .ctanavigation h3{
-        font-size: 22px;
         line-height: 35px;
      }
      .contactus_content .ideaprocess-container .ctanavigation p{
-        font-size: 15px;
         max-width: 200px;
      }
     /* end of contact us section desin */

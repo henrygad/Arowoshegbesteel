@@ -69,7 +69,6 @@ body{
     position: relative;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: auto; 
 }
 
 header,
@@ -85,42 +84,61 @@ footer > section{
     width: 100%;
     height: auto;
 }
-h1, h2{
-    font-family: var(--volkhov-font);
-    font-weight: 600;
-}
 h1{
-    font-size: 30px;
+    font-size: 35px;
 }
 h2{
     font-size: 25px;
 }
-h3, 
-a,
-li{
-    font-family: var(--google-font);
-}
 h3{
+    font-size: 20px;
+}
+h4{
     font-size: 18px;
 }
 p{
+    font-size: 18px;
+}
+label,
+li,
+input{
     font-size: 16px;
-    font-family: var(--poppins-font);
-    color: var(---text-color);
 }
 a,
 button{
-    font-size: 18px;
+    font-size: 16px;
+
+}
+
+h1, h2{
+    font-family: var(--volkhov-font);
+    font-weight: 600;
+}
+h3,
+h4{
+    font-family: var(--google-font);
+    font-weight: 400;
+}
+p,
+label,
+li,
+input{
+    font-family: var(--poppins-font);
+    color: var(---text-color);
+}
+input{
+    outline: none;
+}
+a,
+button{
+    font-family: var(--google-font);
     cursor: pointer;
     color: var(---text-color);
 }
 a{
     text-decoration: none;
 }
-input{
-    font-size: 18px;
-    outline: none;
-}
+
 
 /* additional css for general design */
 body.body{
@@ -165,17 +183,30 @@ body.body::-webkit-scrollbar {
         padding: 0 2.5%;
     }
     h1{
-        font-size: 20px;
+        font-size: 30px;
     }
     h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     h3{
-        font-size: 16;
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
     }
     p{
-        font-size: 14px;
+        font-size: 16px;
     }
+    label,
+    li,
+    input{
+        font-size: 16px;
+    }
+    a,
+    button{
+        font-size: 16px;
+    }
+    
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -185,15 +216,27 @@ body.body::-webkit-scrollbar {
         padding: 0 2.5%;
     }
     h1{
-        font-size: 18px;
+        font-size: 25px;
     }
     h2{
-        font-size: 16px;
+        font-size: 18px;
     }
     h3{
-        font-size: 14;
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
     }
     p{
-        font-size: 12px;
-    } 
+        font-size: 14px;
+    }
+    label,
+    li,
+    input{
+        font-size: 14px;
+    }
+    a,
+    button{
+        font-size: 14px;
+    }
 }
