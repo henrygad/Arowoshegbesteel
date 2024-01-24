@@ -37,10 +37,10 @@ function Autoplay() {
 
     const moves = 30
     const numberOfSlides = 11
-    const transAnimation = 'all 5s linear'
+    const transAnimation = 'all 8s linear'
 
    Autoplayslider(slidesEl, numberOfSlides, moves, transAnimation)
-  }, 5000) 
+  }, 8000) 
 }
 function Clear() {
   clearInterval(clearId)
@@ -53,11 +53,11 @@ function Autoplay1() {
     const slidesEl = document.querySelector('.js-projects-slides1')
     const moves = 30
     const numberOfSlides = 11
-    const transAnimation = 'all 5s linear'
+    const transAnimation = 'all 8s linear 1s'
     const slideRight = 'right'
 
     Autoplayslider(slidesEl, numberOfSlides, moves, transAnimation, slideRight)
-  }, 5000) 
+  }, 8000) 
 
 }
 function Clear1() {
@@ -76,13 +76,12 @@ function Pauseautoplay(){
     slidesEl1.addEventListener('mouseover', e=> Clear1())
     slidesEl1.addEventListener('mouseout', e=> Autoplay1())
 
-  }, 1000)
+  }, 500)
 }
 
 Pauseautoplay()
 Autoplay()
 Autoplay1()
-
 
 
 

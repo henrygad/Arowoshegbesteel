@@ -8,7 +8,6 @@
     position: relative;
     width: 450%;
     height: 100%;
-    grid-column-gap: 10px;
 }
 .projects_slider_container .slides .slide{
     width: 100%;
@@ -24,7 +23,5 @@
     filter: brightness(60%);
 }
 @media (max-width: 767.99px){
-    .projects_slider_container .slides{
-        grid-column-gap: 5px;
-    } 
+  
 }

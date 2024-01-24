@@ -146,7 +146,6 @@ start of products section */
     filter: drop-shadow(.5px .5px 1px rgba(0, 0, 0, .4));
 }
 .products_section .products_grid .product_content:hover{
-    width: 101%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .4));
 }
 .products_section .products_grid .product_content .product_slider{
@@ -245,8 +244,8 @@ start of the why choose us section design
 
  }
  .featureprojects_container .projects_sliders > div{
-    margin-bottom: 10px;
-    height: 300px;
+    margin-bottom: 1px;
+    height: 350px;
  }
  /* end of feature project section design */
 
@@ -526,22 +525,13 @@ start of the footer area design */
      /* 
      start of feature projects design */
      .featureprojects_container .projects_sliders > div{
-        height: 250px;
-        margin-bottom: 5px;
+        height: 300px;
      }
      .featureprojects_container > .title{
         padding-left: 0%;
         padding-right: 0%;
      }
      /* end of feature projects design */
-
-
-     /* 
-     start of client reviews section design */
-     .clientreviews_container .clientreviews_slider{
-        height: px;
-     }
-    /* end of client reviews section design */
 
 
     /* 
@@ -553,10 +543,6 @@ start of the footer area design */
         max-width: 300px;
      }
     /* end of contact us section desin */
-
-    /*start of footer section design */
-    
-      /* end of footer section design */
 
 }
 
@@ -584,21 +570,12 @@ start of the footer area design */
      start of feature projects design */
      .featureprojects_container .projects_sliders > div{
         height: 200px;
-         margin-bottom: 5px;
      }
      .featureprojects_container > .title{
         padding-left: 0%;
         padding-right: 0%;
      }
      /* end of feature projects design */
-
-
-      /* 
-     start of client reviews section design */
-     .clientreviews_container .clientreviews_slider{
-        height: px;
-     }
-    /* end of client reviews section design */
 
 
 
@@ -612,11 +589,6 @@ start of the footer area design */
      }
     /* end of contact us section desin */
 
-
-    
-    /*start of footer section design */
-    
-   /* end of footer section design */
     
    
 }

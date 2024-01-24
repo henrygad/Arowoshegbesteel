@@ -121,7 +121,7 @@ const Home = () => {
                       < Productsslider img1={ele.img1} img2={ele.img2} img3={ele.img3} index={index} transAnimation={ele.transAnimation}/>
                     </div>
                     <div className='product_title'><h3>{ele.producttitle}</h3></div>
-                    <div className='product_btn'><a href='#link' className='button'>Make appiontment  <img src={arrowbtn}  alt=''/> </a></div>
+                    <div className='product_btn'><a href='#contact-us' className='button'>Make appiontment  <img src={arrowbtn}  alt=''/> </a></div>
                    </div>
                 ))
               }
@@ -131,7 +131,7 @@ const Home = () => {
         <section className=' container_2clm whychooseus_container'>
           <div className='title'><Titlestroke text={'Why Choose Us'} color={'var(--primary-color)'} /></div>
           <div className='flex_box_3d whychooseus_flexbox' >
-            <div className='one js-chooseusebox-one' onMouseOver={e=> {
+            <div  className='one js-chooseusebox-one' onMouseOver={e=> {
                 const chooseUsBoxOne_el = document.querySelector('.js-chooseusebox-one')
                 chooseUsBoxOne_el.style.backgroundColor = '#f3efef'
 
@@ -239,7 +239,7 @@ const Home = () => {
                 <div><img src={arrowbtn} alt='' /></div>
               </div>
             </div>
-            <div className='contactusform_container'>
+            <div className='contactusform_container' id="contact-us">
               <Contactform />
             </div>
           </div>
