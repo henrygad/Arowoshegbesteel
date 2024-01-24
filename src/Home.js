@@ -61,7 +61,6 @@ import Contactform from './Conponents/Contactform/Contactform'
 
 
 
-
 const Home = () => {
   return (
     <>
@@ -83,7 +82,7 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <main  className='home_main'>
+      <main  className='main' id='js-main'>
         <section className='hero_container_90vh hero' id='js-hero'>
           <Sliderhero />
         </section>

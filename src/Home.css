@@ -3,10 +3,17 @@
 }
 /* start of the header area design */
 .header{
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 100;
 }
 .header_grid_wrap{
    background-color: #fff;
    padding-top: 8px;
+   border-bottom: 1px solid rgba(0, 0 , 0 , .1);
+   padding-bottom: 2px;
 }
 .header_social_icon{
     height: auto;
@@ -566,27 +573,6 @@ start of the footer area design */
 
 
 @media (min-width: 320px) and (max-width: 480px){
-
-   /*
-   start of the header area design */
-   .header{
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(0, 0 , 0 , .1);
-      padding-bottom: 2px;
-   }
-   /* end of the header area deign */
-
-   /* 
-   start of the main area design */
-   .home_main{
-      margin-top: 95px;
-   }
-   
-
     /* 
     start of about us  section design  */
     .about_content .image img{

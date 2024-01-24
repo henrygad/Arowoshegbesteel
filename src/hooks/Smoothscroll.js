@@ -5,8 +5,7 @@ const Smoothscroll = (el_id, behavior) =>  {
     const currentPostionY = window.pageYOffset
     const distance =  currentPostionY + targetPositionY
   
-    window.scroll({top: distance, behavior: behavior})
-  
+    window.scroll({top: distance, behavior: behavior}) 
 }
 
 export default Smoothscroll

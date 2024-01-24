@@ -1,8 +1,6 @@
 import './Tickynav.css'
 import arrowbtn from '../../Asset/buttonarrow.svg'
 import Getcurrentsection from '../../hooks/Getcurrentsection' 
-import Smoothscroll from '../../hooks/Smoothscroll'
-
 
 
 
@@ -30,7 +28,7 @@ export function Showtickynav(e) {
 const Tickynav = () => {
 
   return (
-    <div className="tickynav " id='js-ticky-nav' onClick={e=> Smoothscroll('js-home', 'smooth')}>
+    <div className="tickynav " id='js-ticky-nav' onClick={e=>  window.scroll({top: 0, behavior: 'smooth'})}>
         <img  src={arrowbtn} alt="ticky navigation" /> 
     </div>
   )
