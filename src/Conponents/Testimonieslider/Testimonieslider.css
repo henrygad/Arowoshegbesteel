@@ -72,12 +72,10 @@
     border-radius: 50%;
 }
 .review_slider .slides .slide .slide_wrap h3{
-    font-size: 19px;
     font-weight: bold;
     color: #333;
 }
 .review_slider .slides .slide .slide_wrap p{
-    font-size: 16px;
     color: #333;
     padding: 10px 30px 20px 30px;
 }
@@ -91,9 +89,7 @@
         height: 80px;
     }
     .review_slider .slides .slide .slide_wrap h3{
-        font-size: 18px;
     }
     .review_slider .slides .slide .slide_wrap p{
-        font-size: 16px;
     }
 }

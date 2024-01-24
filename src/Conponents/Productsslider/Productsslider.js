@@ -16,7 +16,7 @@ const Productsslider = ( {img1, img2, img3, index, transAnimation}) => {
     const numberOfSlides = 3
     const moves = 100
 
-    Arrownavigation(useSlide.current, numberOfSlides, moves, 'all 1s ease-in-out', value, false, useArrowNavNext.current)
+    Arrownavigation(useSlide.current, numberOfSlides, moves, 'all 1s linear', value, false, useArrowNavNext.current)
   }
   
 

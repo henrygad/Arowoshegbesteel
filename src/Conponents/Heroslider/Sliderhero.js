@@ -54,11 +54,11 @@ function Autoplay(){
     const jotNavElArr = document.querySelectorAll('.js-dots')
     const numberOfSlides = 3
     const moves = 100
-    const transAnimation = 'all 2s ease-in-out'
+    const transAnimation = 'all 1s linear'
     const sliderLeft = 'left'
 
     Autoplayslider(slidesEl, numberOfSlides, moves,  transAnimation, sliderLeft, undefined, undefined, jotNavElArr)
-  }, 5000);
+  }, 10000);
 }
 
 function Clear(){
