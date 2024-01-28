@@ -486,6 +486,12 @@ start of the footer area design */
    grid-gap: 5px;
    padding-left: 10px;
 }
+.footer_container .footer_content .footer_socials .content > svg{
+   cursor: pointer;
+}
+
+
+/*  */
 .footer_container .footer_copyright{
    width: 100%;
    height: auto;

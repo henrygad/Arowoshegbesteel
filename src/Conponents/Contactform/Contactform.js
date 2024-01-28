@@ -1,10 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, {useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import {Email, Phoneno} from '../../hooks/Formvalidation'
 
 import './Contactform.css'
 
 
-export const Contactform = () => {
+export const Contactform = ({productsList}) => {
   const form = useRef(null);
   
   const [name, setName] = useState('')
@@ -13,20 +14,34 @@ export const Contactform = () => {
   const [service, setService] = useState('')
   const [message, setMessage] = useState('')
 
-  const sendEmail = (e) => {
-    e.preventDefault();
 
-       if(name && email && phone){
-        emailjs.sendForm('service_dyloeel', 'template_svrchpo', form.current, 'ltNawjgy3CqCTwVXe')
-        .then((result) => {
-          alert("message send.", result.text)
-        }, (error) => {
-            alert(error.text)
-        });
-       }else{
-        alert('boxes empty')
-        return;
-       }
+
+  const Clientsidevalidateemail = e=> {
+      Email('js-email', 'rgba(0, 0, 255, 0.4)')
+  }
+
+  const Clientsidevalidatephone = e=> {
+    Phoneno('js-phone', 'rgba(0, 0, 255, 0.4)' )
+  }
+  
+
+  const Sendemail = (e) => {
+    e.preventDefault();
+    const clientsidevalidateemail = Email('js-email', 'rgba(0, 0, 255, 0.4)')
+
+    if(!clientsidevalidateemail){
+      alert('wrong email, try agin')
+      return;
+    }else
+  
+  
+      emailjs.sendForm('service_dyloeel', 'template_svrchpo', form.current, 'ltNawjgy3CqCTwVXe')
+      .then((result) => {
+        alert("message send.", result.text)
+      }, (error) => {
+          alert(error.text)
+      });
+    
 
 
       setName('')
@@ -36,8 +51,9 @@ export const Contactform = () => {
       setMessage('')
   };
 
+
   return (
-      <form ref={form} onSubmit={sendEmail} id='contactform'>
+      <form ref={form} onSubmit={Sendemail} id='contactform'>
         <div className='contactform_wraper'>
           <div className='name'>
             <label htmlFor='name'>name</label>
@@ -45,15 +61,19 @@ export const Contactform = () => {
           </div>
           <div className='email' >
             <label htmlFor='email'>email</label>
-            <input type='email' id='email' placeholder='johnmark@gmail.com' name="from_email" value={email}  onInput={ e => setEmail(e.target.value)}/>
+            <input type='email' id='js-email' placeholder='johnmark@gmail.com' name="from_email" value={email}  onChange={ e => {Clientsidevalidateemail(); setEmail(e.target.value)}}/>
           </div>
           <div className='phone'>
             <label htmlFor='phone'>phone (optional)</label>
-            <input type='phone' id='phone' placeholder='+234 7025672168' name="from_phone" value={phone}  onInput={ e => setPhone(e.target.value)} />
+            <input type='phone' id='js-phone' placeholder='+234 7025672168' name="from_phone" value={phone}  onInput={ e => { Clientsidevalidatephone(); setPhone(e.target.value)}} />
           </div>
           <div className='service'>
             <label htmlFor='service'>service</label>
-            <input type='text' id='service' placeholder='Domistic ventilation installation'name="from_service"value={service}  onInput={ e => setService(e.target.value)} />
+            <select id='js-service' name="from_service" value={service} onInput={ e => setService(e.target.value)} >
+              {productsList.map((value, index) => (
+                 <option id={'vlaue'+index} key={index} value={value.producttitle}>{value.producttitle}</option>  
+              ))}
+            </select>
           </div>
           <div className='message'>
             <label htmlFor='message'>message</label>
@@ -68,5 +88,7 @@ export const Contactform = () => {
 };
 
 
-
-export default Contactform
+export const Getproductindex =  ex_value =>{
+  const contactform_selectel = document.getElementById('js-service')
+  contactform_selectel.value =  ex_value
+}

@@ -7,6 +7,8 @@ import Projectsslider from './Conponents/Projectsslider/Projectsslider'
 import Testimonieslider from './Conponents/Testimonieslider/Testimonieslider'
 import Titlestroke from './Conponents/Titlestroke/Titlestroke'
 import Tickynav from './Conponents/Tickynav/Tickynav'
+import Smoothscroll from './hooks/Smoothscroll'
+import {Contactform, Getproductindex } from './Conponents/Contactform/Contactform'
 
 
 import {AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
@@ -56,7 +58,6 @@ import reviewImage2 from './Asset/testimonies/testimonialslogo2.jpg'
 import reviewImage3 from './Asset/testimonies/testimonialslogo3.jpg'
 import reviewImage4 from './Asset/testimonies/testimonialslogo4.jpg'
 import reviewStar from './Asset/testimonies/reviewstars.png'
-import Contactform from './Conponents/Contactform/Contactform'
 
 
 
@@ -69,9 +70,9 @@ const Home = () => {
           <div className='grid_box_3areas header_grid_wrap'>
             <div className='header_social_icon'>
               <a href='https://facebook.com'><AiFillFacebook color='var( --primary-color)' size="20px" /></a>
-              <a href='https://facebook.com'><AiFillTwitterSquare color='var( --primary-color)' size="20px" /></a>
-              <a href='https://facebook.com'><AiFillInstagram color='var( --primary-color)' size="20px" /></a>
-              <a href='https://facebook.com'><AiFillLinkedin color='var( --primary-color)' size="20px" /></a>
+              <a href='https://twiter.com'><AiFillTwitterSquare color='var( --primary-color)' size="20px" /></a>
+              <a href='https://instagram.com'><AiFillInstagram color='var( --primary-color)' size="20px" /></a>
+              <a href='https://linkedin.com'><AiFillLinkedin color='var( --primary-color)' size="20px" /></a>
             </div>
             <div className='header_logo'>
               <a href='/' role='button'><img src={logo} alt="Arowoshegbe logo"/></a>
@@ -121,7 +122,7 @@ const Home = () => {
                       < Productsslider img1={ele.img1} img2={ele.img2} img3={ele.img3} index={index} transAnimation={ele.transAnimation}/>
                     </div>
                     <div className='product_title'><h3>{ele.producttitle}</h3></div>
-                    <div className='product_btn'><a href='#contact-us' className='button'>Make appiontment  <img src={arrowbtn}  alt=''/> </a></div>
+                    <div className='product_btn'><a href='#contact-us' className='button' onClick={e=> Getproductindex(ele.producttitle)}>Make appiontment  <img src={arrowbtn}  alt=''/> </a></div>
                    </div>
                 ))
               }
@@ -236,11 +237,11 @@ const Home = () => {
               <div className='ctanavigation'>
                 <div><h3>Make an Appiontment Today</h3></div>
                 <div><p>Get Started with Free Consultation now<span>!</span></p></div>
-                <div><img src={arrowbtn} alt='' /></div>
+                <div><img onClick={e=> Smoothscroll('contact-us')} src={arrowbtn} alt='' /></div>
               </div>
             </div>
             <div className='contactusform_container' id="contact-us">
-              <Contactform />
+              <Contactform productsList={products_list} />
             </div>
           </div>
         </section>
@@ -284,5 +285,3 @@ const Home = () => {
 }
 
 export default Home;
-
-

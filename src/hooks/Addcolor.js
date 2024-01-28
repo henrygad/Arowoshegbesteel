@@ -1,7 +1,11 @@
-
-
-
-
+/**
+ * ex_index props: collect the index number of a element that it color need to be updated
+ * 
+ *  arrClass props: collect the classname of attribute name (all the element involve should have the same the classname) 
+ * 
+ * Addcolor(ex_index, arrClass) a function that update the  color of element(s)
+ * 
+*/
 const Addcolor = (ex_index, arrClass) => {
     const arr_el = document.querySelectorAll('.'+arrClass)
     
