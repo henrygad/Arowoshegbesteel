@@ -6,7 +6,7 @@
  * Addcolor(ex_index, arrClass) a function that update the  color of element(s)
  * 
 */
-const Addcolor = (ex_index, arrClass) => {
+const Useaddcolor = (ex_index, arrClass) => {
     const arr_el = document.querySelectorAll('.'+arrClass)
     
     if(arrClass) arr_el.forEach((el, index) =>{
@@ -19,4 +19,4 @@ const Addcolor = (ex_index, arrClass) => {
 
 }
 
-export default Addcolor
+export default Useaddcolor

@@ -6,7 +6,7 @@
  * Smoothscroll(el_id, behavior) a function the allows for a smooth scrolling through a givent piont in a web page
  * 
 */
-const Smoothscroll = (el_id, behavior) =>  {
+const Usesmoothscroll = (el_id, behavior) =>  {
     const targer_el = document.getElementById(el_id)
     const targetPositionY = targer_el.getBoundingClientRect().top
     const currentPostionY = window.pageYOffset
@@ -15,4 +15,4 @@ const Smoothscroll = (el_id, behavior) =>  {
     window.scroll({top: distance, behavior: behavior}) 
 }
 
-export default Smoothscroll
+export default Usesmoothscroll

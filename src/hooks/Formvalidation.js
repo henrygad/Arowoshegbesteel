@@ -13,7 +13,7 @@ const regexPhoneno = /^[\\+]?[ (]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{
 const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
 
-export const Email = (inputid, bordercolor) => {
+export const Useemail = (inputid, bordercolor) => {
     const input_el = document.getElementById(inputid)
     const sendemail = input_el.value.match(regexEmail)
     const message = 'Wrong email address'
@@ -35,7 +35,7 @@ export const Email = (inputid, bordercolor) => {
 
 
 
-export const Phoneno = (inputid, bordercolor) => {
+export const Usephoneno = (inputid, bordercolor) => {
     const input_el = document.getElementById(inputid)
     const sendphoneno = input_el.value.match(regexPhoneno)
     const message = 'Wrong phone number'

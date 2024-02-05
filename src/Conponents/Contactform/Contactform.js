@@ -1,6 +1,6 @@
 import React, {useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import {Email, Phoneno} from '../../hooks/Formvalidation'
+import {Useemail, Usephoneno} from '../../hooks/Formvalidation'
 
 import './Contactform.css'
 
@@ -17,17 +17,17 @@ export const Contactform = ({productsList}) => {
 
 
   const Clientsidevalidateemail = e=> {
-      Email('js-email', 'rgba(0, 0, 255, 0.4)')
+      Useemail('js-email', 'rgba(0, 0, 255, 0.4)')
   }
 
   const Clientsidevalidatephone = e=> {
-    Phoneno('js-phone', 'rgba(0, 0, 255, 0.4)' )
+    Usephoneno('js-phone', 'rgba(0, 0, 255, 0.4)' )
   }
   
 
   const Sendemail = (e) => {
     e.preventDefault();
-    const clientsidevalidateemail = Email('js-email', 'rgba(0, 0, 255, 0.4)')
+    const clientsidevalidateemail = Useemail('js-email', 'rgba(0, 0, 255, 0.4)')
 
     if(!clientsidevalidateemail){
       alert('wrong email, try agin')
